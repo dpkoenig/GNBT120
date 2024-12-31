@@ -1,8 +1,4 @@
 locale: "en-US"
 title: "GNBT 120: Analysis of Genomes"
-description: >
-Hello
-<br>
-Hello Again
 name: "Daniel Koenig"
 theme: jekyll-theme-minimal
