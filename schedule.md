@@ -1,5 +1,5 @@
 # Schedule
-| Week | Date | Topic | Reading  |
+| Week | Date | Topic | Reading  |  
 | ------------- | -------------  | -------------  | -------------  |
 | Week 1  | 01/07/2025  |    | |
 | Week 1  | 01/09/2025  |    | |
