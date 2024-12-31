@@ -1,4 +1,5 @@
 locale: "en-US"
 title: "GNBT 120: Analysis of Genomes"
 name: "Daniel Koenig"
+description: Minimal is a theme for GitHub Pages.
 theme: jekyll-theme-minimal
