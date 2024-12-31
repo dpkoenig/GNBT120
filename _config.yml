@@ -1,5 +1,6 @@
 locale: "en-US"
 title: "GNBT 120: Analysis of Genomes"
 name: "Daniel Koenig"
+markdown: GFM
 show_downloads: false
 theme: jekyll-theme-minimal
