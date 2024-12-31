@@ -1,2 +1,1 @@
-# GNBT120
-Analysis of Genomes course website
+[Duck Duck Go](https://duckduckgo.com)
