@@ -3,8 +3,8 @@
 | ------------- | -------------  | -------------  | -------------  | -------------  |
 |1|01/07/2025| Course intro, connect to HPCC, Markdown intro | | |
 |1|01/09/2025| Introduction to the Linux/Unix environment | | Quiz #1 |
-|2|01/14/2025|    | | Assignment #1 |
-|2|01/16/2025|    | | Quiz #2 |
+|2|01/14/2025| Loops and BLAST   | | Assignment #1 |
+|2|01/16/2025| Intro to R and RStudio   | | Quiz #2 |
 |3|01/21/2025|    | | Assignment #2 |
 |3|01/23/2025|    | | Quiz #3 |
 |4|01/28/2025|    | | Assignment #3 |
