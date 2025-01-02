@@ -19,5 +19,6 @@
 |8|02/27/2025|    | | Quiz #8 |
 |9|03/28/2025|    | | Assignment #8 |
 |9|03/30/2025|    | | Quiz #9 |
-|10|03/04/2025|    | | |
+|10|03/04/2025| Project wrap up slide review | | |
 |10|03/06/2025| Project Presentations | | |
+|Finals Week| | | Project write up due date |
