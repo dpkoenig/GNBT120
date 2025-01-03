@@ -333,192 +333,235 @@ This shows the permissions, number of links (1), owner (exouser), group (exouser
 
 |Permissions|Number of Links|Owner|Group|File Size|Time of Last Modification|File Name|
 |:---------:|:-------------:|:---:|:---:|:-------:|:-----------------------:|:--------|
-|-rw-r--r--|1|exouser|exouser|0|Mar 31 17:54|foo.txt|
+|-rw-r--r--|1|exouser|exouser|0|Mar 31 17:54|foo.txt|  
+
 Let’s first turn on all permissions for everyone.
-
+```
 chmod 777 foo.txt
+```
 The explanation of what this does will have to wait for a bit. The file now has the following properties.
-
+```
 -rwxrwxrwx 1 exouser exouser 0 Mar 31 17:54 foo.txt*
+```
 The first character is a hyphen. This means the file is an ordinary file. If the file was a directory, the letter would be a d. If it was an alias, the letter would be an l. The 3 rwx symbols that follow are the read, write, and execute permissions for user, group, and public. So everyone has permission to read, write, and execute this file. If you copy files from a USB flash drive, it will typically have all these permissions because the file system on most flash drives is not Unix-based. Having all permissions on is generally not a good idea. Most files fit into one of a few categories.
 
-Category	Code	Oct	Meaning
-raw data	-r--r--r--	444	anyone can read, nobody can write
-private	-rw-------	600	I can read/write, others nothing
-shared	-rw-r--r--	644	I can read/write, group/public can read
-shared	-rw-rw-r--	664	We can read/write, public can read
-You can change the permissions of a file with the chmod (change mode) command. There are two different syntaxes. The more human readable one looks like this.
+|Category|Code|Oct|Meaning|
+|:------:|:--:|:-:|:-----:|
+|raw data|-r--r--r--|444|anyone can read, nobody can write|
+|private|-rw-------|600|I can read/write, others nothing|
+|shared|-rw-r--r--|644|I can read/write, group/public can read|
+|shared|-rw-rw-r--|664|We can read/write, public can read|  
 
+You can change the permissions of a file with the `chmod` (change mode) command. There are two different syntaxes. The more human readable one looks like this.
+```
 chmod u-x foo.txt
+```
 This command says “change the user (u) to remove (-) the execute (x) permission from file foo.txt”. You add permissions with +.
-
+```
 chmod u+x foo.txt
-The octal format is convenient because it changes all of the permissions at once, but can be confusing for people who don’t think in octal. 4 is the read permission. 2 is the write permission. 1 is the execute permission. Each rwx corresponds to one octal number from 0 to 7. So chmod 777 turns on all permissions for all types of people and chmod 000 turns them all off. I generally use only two permissions: 444 and 644. That is, everything is readable, but somethings only I can write.
+```
+The octal format is convenient because it changes all of the permissions at once, but can be confusing for people who don’t think in octal. 4 is the read permission. 2 is the write permission. 1 is the execute permission. Each rwx corresponds to one octal number from 0 to 7. So `chmod 777` turns on all permissions for all types of people and `chmod 000` turns them all off. I generally use only two permissions: 444 and 644. That is, everything is readable, but somethings only I can write.
 
-Working with Text Files
+### Working with Text Files
 There are 2 kinds of files: text and binary. A text file looks like the file you’re reading. There are familiar letters, words, and punctuation (includes spaces between words). Binary files don’t look like this. Instead, they look like a bunch of random letters, some of which don’t even display properly on your screen. Let’s look at one.
-
+```
 cat /bin/ls
-Yuck. Most of the programs you run on a computer are binary files. Generally speaking, binary files are for machine consumption and text files are for human consumption (or readability). Text files come in 3 common flavors. Unix text files have a newline character at the end of each line. Mac text files generally also use newline characters, but carriage returns were used in the past and are still sometimes used. Windows files end in carriage returns plus newlines (they have 2 characters to denote end of line). These differences in line endings can cause problems when interchanging files among computers. For this reason, avoid interchanging files between your Linux, Mac, and Windows computers. One of the stupidest things you can do is to put sequence data into Microsoft Word or Excel (or similar software) and then attempt to use it in Unix.
+```
+Yuck. Most of the programs you run on a computer are binary files. Generally speaking, binary files are for machine consumption and text files are for human consumption (or readability). Text files come in 3 common flavors. Unix text files have a newline character at the end of each line. Mac text files generally also use newline characters, but carriage returns were used in the past and are still sometimes used. Windows files end in carriage returns plus newlines (they have 2 characters to denote end of line). These differences in line endings can cause problems when interchanging files among computers. For this reason, avoid interchanging files between your Linux, Mac, and Windows computers. **One of the stupidest things you can do is to put sequence data into Microsoft Word or Excel (or similar software) and then attempt to use it in Unix**.
 
-Bioinformatics often deals with large text files. These can contain whole genomes, massive RNA-seq experiments, or thousands of spectra. You need to appreciate the size of these files so that you don’t do stupid stuff with them, like email them to a colleague. Let’s look at the Caenorhabditis elegans genome. First, let’s see how big it is. We’ll use the ls with the -h and -l options so that we can see the size of the file. Please use tab completion when typing the following.
-
+Bioinformatics often deals with large text files. These can contain whole genomes, massive RNA-seq experiments, or thousands of spectra. You need to appreciate the size of these files so that you don’t do stupid stuff with them, like email them to a colleague. Let’s look at the Caenorhabditis elegans genome. First, let’s see how big it is. We’ll use the `ls` with the `-h` and `-l` options so that we can see the size of the file. **Please use tab completion when typing the following**.
+```
 ls -lh ~/data/C.elegans
+```
 You should see something that looks similar to this:
-
+```
 total 34M
 -r-xr-xr-x 1 exouser exouser  28M Mar 28  2019 c_elegans.PRJNA13758.WS269.genomic.fa.gz
 -r-xr-xr-x 1 exouser exouser 5.4M Apr  1  2019 c_elegans.PRJNA13758.WS269.protein.fa.gz
-There are two files, one contains genomic sequence, the other contains protein. The genome is 28 megabytes. That’s not a very big file, but it’s too big to email. A knee-jerk reaction might be to open this in your text editor. That’s a bad idea for several reasons: (1) You shouldn’t edit data files. (2) It takes a lot more memory to edit a file than view its contents. (3) The file is binary. Let’s do it anyway. Use tab completion to do the following.
-
+```
+There are two files, one contains genomic sequence, the other contains protein. The genome is 28 megabytes. That’s not a very big file, but it’s too big to email. A knee-jerk reaction might be to open this in your text editor. That’s a bad idea for several reasons: (1) You shouldn’t edit data files. (2) It takes a lot more memory to edit a file than view its contents. (3) The file is binary. Let’s do it anyway. **Use tab completion** to do the following.
+```
 nano ~/data/C.elegans/c_elegans.PRJNA13758.WS269.genomic.fa.gz
+```
 You should notice two things. First the file is not writable meaning we cannot edit it. Second the file is binary, so it looks like gibberish. We need to uncompress it to see its contents. The permissions we displayed earlier indicate that the file can only be read and executed. These permissions are in place to prevent the accidental editing of the data files. The file name is also hopelessly long. Let’s organize ourselves a little. First, let’s create a directory where we can collect our work.
-
+```
 mkdir ~/Project0
 cd ~/Project0
-The path to the genome file is long. We can simplify it with an alias. The ln -s command creates a link or alias from this directory to the original file.
-
+```
+The path to the genome file is long. We can simplify it with an alias. The `ln -s` command creates a link or alias from this directory to the original file.
+```
 ln -s ~/data/C.elegans/c_elegans.PRJNA13758.WS269.genomic.fa.gz ./genome.gz
 ls -lF
-Note what ls -lF shows you. The l at the beginning of the permissions shows you that the file is an alias. The arrow shows you what the alias points to.
+```
+Note what `ls -lF` shows you. The l at the beginning of the permissions shows you that the file is an alias. The arrow shows you what the alias points to.
 
-Now let’s start uncompressing it. The gunzip (GNU unzip) command uncompresses files. (Calling it “gunzip” is a quick way to anger computer nerds) If we want to stream the file to the terminal in a way similar to cat we use gunzip -c.
-
+Now let’s start uncompressing it. The `gunzip` (GNU unzip) command uncompresses files. If we want to stream the file to the terminal in a way similar to `cat` we use `gunzip -c`.
+```
 gunzip -c genome.gz
-When you get sick of watching the text scroll by, you can interrupt it with a ^C (control-c). ^C is a good way to interrupt a runaway process. But sometimes it doesn’t work and you may have better luck with ^Z, which sleeps the process (yes, just like the Borg). More on that later.
+```
+When you get sick of watching the text scroll by, you can interrupt it with a `^C` (control-c). `^C` is a good way to interrupt a runaway process. But sometimes it doesn’t work and you may have better luck with `^Z`, which sleeps the process (yes, just like the Borg). More on that later.
 
-Sometimes we want to look at the first few lines of a file without committing ourselves to the whole file. head is great for that.
-
+Sometimes we want to look at the first few lines of a file without committing ourselves to the whole file. `head` is great for that.
+```
 head genome.gz
-Rats, it’s still binary. What would be great is if we could uncompress the file and view the contents with head. One of the awesome powers of Unix is that you can pipeline the output of one program to the input of another with the pipe | token. This might look like a capital I or lowercase l, but it’s not, it’s its own strange beast located somewhere where your right pinkie can access it.
-
+```
+Rats, it’s still binary. What would be great is if we could uncompress the file and view the contents with `head`. One of the awesome powers of Unix is that you can pipeline the output of one program to the input of another with the pipe `|` token. This might look like a capital I or lowercase l, but it’s not, it’s its own strange beast located somewhere where your right pinkie can access it.
+```
 gunzip -c genome.gz | head
-Success. The first line of the file is a FASTA header and this is followed by a bunch of sequence lines. If you don’t know what the FASTA format is, now is a good time to read about the FASTA format online.
+```
+Success. The first line of the file is a FASTA header and this is followed by a bunch of sequence lines. If you don’t know what the FASTA format is, now is a good time to [read about the FASTA format online](https://en.wikipedia.org/wiki/FASTA_format).
 
 FASTA files sometimes contain multiple sequences. As this file represents the C. elegans genome, we expect 6 chromosomes. Let’s look for those in the file.
-
+```
 gunzip -c genome.gz | less
-Now we can page through the file looking for lines that start with >. As you page through the file, note how long the chromosome is. It will take you over 12,000 more spacebar presses to get to the next chromosome (assuming your terminal is still 24 lines). Remember, this is a small genome. One of the features of less is that it allows you to search for simple patterns. Hit the forward-slash key / to bring up the search prompt at the bottom of the terminal. Now hit the > key and press return. less will find the next > symbol in the file. Keep hitting the / key and return. less remembers the last pattern.
+```
+Now we can page through the file looking for lines that start with `>`. As you page through the file, note how long the chromosome is. It will take you over 12,000 more spacebar presses to get to the next chromosome (assuming your terminal is still 24 lines). Remember, this is a small genome. One of the features of `less` is that it allows you to search for simple patterns. Hit the forward-slash key `/` to bring up the search prompt at the bottom of the terminal. Now hit the `>` key and press return. `less` will find the next `>` symbol in the file. Keep hitting the `/` key and return. `less` remembers the last pattern.
 
-If you need to find patterns in files, the Unix grep command is often the first tool people turn to.
-
+If you need to find patterns in files, the Unix `grep` command is often the first tool people turn to.
+```
 gunzip -c genome.gz | grep ">"
-Now let’s save that output to a file. You can redirect the output of a program to a file with the > token.
-
+```
+Now let’s save that output to a file. You can redirect the output of a program to a file with the `>` token.
+```
 gunzip -c genome.gz | grep ">" > chromosomes.txt
 cat chromosomes.txt
-Exercise four
+```
+#### Exercise four
 
-The file ~/data/A.thaliana/Araport11_genes.201606.pep.fasta.gz contains all of the predicted protein sequences from genes in the Arabidopsis genome. Using the commands you have learned so far, write a command or set of commands to display the name of the last protein in the file (displaying the whole line that contains the protein name is fine). In your answer include both the commands that you used (formatted as a code block) and the output from those commands.
+The file `~/data/A.thaliana/Araport11_genes.201606.pep.fasta.gz` contains all of the predicted protein sequences from genes in the Arabidopsis genome. Using the commands you have learned so far, write a command or set of commands to display the name of the last protein in the file (displaying the whole line that contains the protein name is fine). In your answer include both the commands that you used (formatted as a code block) and the output from those commands.
 
-End of exercise four
+*End of exercise four*
 
-You will be creating a lot of files in this course. Sometimes they will be large. Use gzip (GNU zip) and gunzip (GNU unzip) as needed. gzip usually reduces a file to between 50% and 25% its size, so it’s a great way to save space, especially when you start to work with large -omic data files.
-
+You will be creating a lot of files in this course. Sometimes they will be large. Use `gzip` (GNU zip) and `gunzip` (GNU unzip) as needed. `gzip` usually reduces a file to between 50% and 25% its size, so it’s a great way to save space, especially when you start to work with large -omic data files.
+```
 gzip chromosomes.txt
 ls -l
 gunzip chromosomes.txt
 ls -l
-Note that gzip and gunzip automatically adds and removes the .gz file extension appropriately. If you would like to compress or decompress a file, but keep the original file you can use the -k argument for example gzip -k chromosomes.txt
-
+```
+Note that `gzip` and `gunzip` automatically adds and removes the .gz file extension appropriately. If you would like to compress or decompress a file, but keep the original file you can use the `-k` argument for example `gzip -k chromosomes.txt`
+```
 gzip -k chromosomes.txt
 ls -l
-Notice this time we have our new compressed chromosomes.txt.gz file and the original chromosomes.txt file
+```
+Notice this time we have our new compressed `chromosomes.txt.gz` file and the original `chromosomes.txt` file
 
-In Unix, when people send you multiple files, they generally send them as a tar ball. The tar (tape archive) command creates archives, which are single files that contain multiple files. Let’s create a bunch of files in this directory.
-
+In Unix, when people send you multiple files, they generally send them as a **tar ball**. The `tar` (tape archive) command creates archives, which are single files that contain multiple files. Let’s create a bunch of files in this directory.
+```
 touch file1 file2 file3 file4 file5
-Now let’s cd up a directory and have a look around.
-
+```
+Now let’s `cd` up a directory and have a look around.
+```
 cd ..
 ls
 ls Project0
-To create an archive of Project0, we need to tell the tar command that we want to create the archive with the -c option and tell it the name of the file with the -f option.
-
+```
+To create an archive of Project0, we need to tell the `tar` command that we want to create the archive with the `-c` option and tell it the name of the file with the `-f` option.
+```
 tar -c -f project0.tar Project0
-Unix options generally go before the arguments on the command line. That’s why -f project0.tar goes before Project0. You can collapse single letter options if you’re lazy. So the following command is the same thing.
-
+```
+Unix options generally go before the arguments on the command line. That’s why `-f project0.tar` goes before `Project0`. You can collapse single letter options if you’re lazy. So the following command is the same thing.
+```
 tar -cf project0.tar Project0
 ls
+```
 To save space on your file system, you should compress your tar-balls.
-
+```
 gzip project0.tar
 ls
-The tar command will do this automatically with the -z option. So when you want to create a tar-ball, the one-liner is as follows:
-
+```
+The `tar` command will do this automatically with the `-z` option. So when you want to create a tar-ball, the one-liner is as follows:
+```
 tar -czf project0.tar.gz Project0
-To decompress a tar-ball, you swap the -c option for the -x option. Let’s use our Stuff directory and inflate the tar-ball in there so that we make a copy and don’t overwrite our original directory.
-
+```
+To decompress a tar-ball, you swap the `-c` option for the `-x` option. Let’s use our Stuff directory and inflate the tar-ball in there so that we make a copy and don’t overwrite our original directory.
+```
 mv project0.tar.gz Stuff
 cd Stuff
 tar -xzf project0.tar.gz
 ls
 ls Project0
-Processes
+```
+
+## Processes
 One of the most important programs in Unix is top because it lets us monitor the health of our computer. Open up a new terminal and start the program.
-
+```
 top
-On Unix systems, top is the equivalent of the the Task Manger in Windows and the Activity Monitor in Mac OS. Once you start running bioinformatics software on your computer, you can monitor what is happening using top.
+```
+On Unix systems, `top` is the equivalent of the the Task Manger in Windows and the Activity Monitor in Mac OS. Once you start running bioinformatics software on your computer, you can monitor what is happening using `top`.
 
-There is a newer variant called htop that you might prefer (JM does). Open up a new terminal and try it.
-
+There is a newer variant called `htop` that you might prefer. Open up a new terminal and try it.
+```
 htop
+```
 Which do you prefer? Quit whichever one you don’t like by typing q.
 
-Viewing Processes
-Let’s go back to a previous command and watch it with top. Notice that it doesn’t use 100% of the CPU.
-
+### Viewing Processes
+Let’s go back to a previous command and watch it with `top`. Notice that it doesn’t use 100% of the CPU.
+```
 cd ~/Project0
 gunzip -c genome.gz
-Let’s do that one more time, and this time we will use the time command to determine the elapsed and CPU time.
-
+```
+Let’s do that one more time, and this time we will use the `time` command to determine the elapsed and CPU time.
+```
 time gunzip -c genome.gz
+```
 On my computer, I get the following stats
-
+```
 real    0m6.930s
 user    0m0.483s
 sys     0m0.859s
+```
 It took about 7 seconds to stream the contents to my terminal. The CPU time is the sum of the user and sys time. Why did it take so much more real time than CPU time? Because it takes some time to display to the terminal, during which the CPU isn’t very busy. Let’s try the same task and send the output to a file.
-
+```
 time gunzip -c genome.gz > foo
+```
 Big difference!
-
+```
 real    0m0.413s
 user    0m0.357s
 sys     0m0.056s
-Sometimes we don’t even need to see the output. In this case, we can redirect the output to /dev/null which is Unix’s black hole (not even electrons escape).
-
+```
+Sometimes we don’t even need to see the output. In this case, we can redirect the output to `/dev/null` which is Unix’s black hole (not even electrons escape).
+```
 time gunzip -c genome.gz > /dev/null
+```
 Faster still because we don’t have to write to the file system.
-
+```
 real    0m0.356s
 user    0m0.348s
 sys     0m0.009s
+```
 Note that the CPU time is slightly greater than the real time. How can something take less wall clock time than CPU time? Are we violating the laws of physics? No, your computer has more than one core and can split up tasks on various cores. For programs that can utilize multiple cores, the real time may be much less than the CPU time.
 
-Managing Processes
+### Managing Processes
 Sometimes you will start a program and decide you want to stop it permanently or temporarily. Run the following command and then watch what happens in top. You may find it useful to copy-paste this command from the document to your terminal to make sure you don’t introduce spelling errors.
-
+```
 perl -e 'while(1){print $i++, chr(10)}'
-This command is an endless loop in the Perl programming language that counts from 0 to some very large number. You cannot do anything useful in your terminal until the program stops, which unfortunately, is a long time from now. Fortunately, we can break out of the program with ^C. Do that now.
+```
+This command is an endless loop in the Perl programming language that counts from 0 to some very large number. You cannot do anything useful in your terminal until the program stops, which unfortunately, is a long time from now. Fortunately, we can break out of the program with `^C`. Do that now.
 
-But what if you just wanted to pause the program and restart it again? You can do that with ^Z. So let’s go back and execute that command again (use the up arrow) and this time send it a sleep signal.
-
+But what if you just wanted to pause the program and restart it again? You can do that with `^Z`. So let’s go back and execute that command again (use the up arrow) and this time send it a sleep signal.
+```
 perl -e 'while(1){print $i++, chr(10)}'
-Now hit ^Z. To get it to pick up where it left off, use the fg command to put the process into the foreground.
-
+```
+Now hit `^Z`. To get it to pick up where it left off, use the `fg` command to put the process into the **foreground**.
+```
 fg
-Now go look at top. You should see a perl process using a lot of CPU. Every process (program) on your computer has a process ID (PID). If you know the PID of a process, you can take control of it (assuming it is yours). My perl process has PID 6000. On yours it is probably different. You can view all your processes with the ps command. In the following command, replace ian with your user name: exouser.
-
+```
+Now go look at `top`. You should see a perl process using a lot of CPU. Every process (program) on your computer has a process ID (PID). If you know the PID of a process, you can take control of it (assuming it is yours). My perl process has PID 6000. On yours it is probably different. You can view all your processes with the `ps` command. In the following command, replace `ian` with your user name: `exouser`.
+```
 ps -u ian
+```
 However you attain the PID of your offending process, you can kill it. Replace 6000 with your PID.
-
+```
 kill 6000
-You can put processes into the background. This will mean the terminal no longer controls them. You can’t ^C to interrupt such a process, but you can use the kill command. Add & to the end of a command line to put it into the background or use the bg command to put a paused process into the background. You shouldn’t need to do these things in this class, but we include this info for completeness.
+```
+You can put processes into the **background**. This will mean the terminal no longer controls them. You can’t `^C` to interrupt such a process, but you can use the `kill` command. Add `&` to the end of a command line to put it into the background or use the `bg` command to put a paused process into the background. You shouldn’t need to do these things in this class, but we include this info for completeness.
 
-Turn it in
-Make sure the most recent version of your .md files are saved.
-Click Preview to create .html version.
-Add the .md changes and the .html files to your repository.
-Commit the changes. Push.
-Go to github to make sure the change uploaded.
+### Turn it in
+* Make sure the most recent version of your `.md` files are saved.
+* Click `Preview` to create `.html` version.
+* Add the .md changes and the `.html` files to your repository.
+* Commit the changes. Push.
+* Go to github to make sure the change uploaded.
