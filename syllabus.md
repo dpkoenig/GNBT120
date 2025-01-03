@@ -93,6 +93,12 @@ This course is built around a computational lab that provides you the opputunity
 ### Lab Exercises
 There will be lab assignments due every week or two. Lab assignments will consist of questions that you answer as you work through the lab material. They may consist of combinations of short answers, code segments, figures, and other data analysis. Lab assignments will be turned via GitHub. You will learn how to do this before the first due date.
 
+### Quizzes
+Weekly 10 min multiple choice quizzes will be administered covering reading and lecture materials. These are meant to keep you on track over the quarter.
+
+### Lab Project
+An important part of your grade for this course will be to apply your new computational skills by conducting research with a dataset produced by my laboratory. You will develop a short presentation on your research during the final meeting period, and you will generate a research report to be turned in during finals week. I will provide you with further details on this as the course progresses.
+
 ## UCR ACADEMIC POLICIES AND STUDENT SUPPORT
 ### ITS Help and Student Technology Support
 ITS Student Technology Services supports 9 student computer labs, including 7 public labs and 2 nonpublic labs, with approximately 293 public lab hours per week (with reduced hours during breaks and summer) available for academic use by all UCR students.
