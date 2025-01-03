@@ -32,6 +32,10 @@ At the turn of the century, just 25 years ago, biological experiments were extre
 * Align entire genomes to one another and identify large scale changes
 * Link genomic differences to changes in phenotype using genome-wide association studies
 * Identify changes in gene expression between samples using transcriptomic datasets
+
+## On Plagiarism
+You will often work with a lab partner as you do the lab exercises. However you must each write your own answers for worksheets and lab reports. In addition, while the web is a powerful resource for information it is plagiarism and a SJA violation to cut and paste information directly from web sources without indicating that you are quoting and providing a citation.
+
 ## Required Course Materials
 There are two main text books for this course. The first is **Bioinformatics Data Skills** by Vince Buffalo. You should have access to this text via the University of California site license for O'Reilly books [here](https://learning.oreilly.com/home/). Log-in using your campus credentials and you should have access at least while on campus, but you may need to setup a campus VPN through the library to get access off campus. You can find cheap used versions of this text online as well.
 The second text that we may also use as a reference is Hadley Wickham and Garrett Grolemund's R for Science which you can find [here](https://r4ds.had.co.nz).
@@ -85,6 +89,9 @@ All re-grading requests for exams, quizzes, and assignments must be submitted in
 
 ### Lab Attendance
 This course is built around a computational lab that provides you the opputunity to interact with the instructor and each other while trying to work through bioinformatics workflows. Because I believe this interaction to be core to the development of new computational skills,  attendance of the lab as part of your participation grade. If you have an emergency that requires you to miss lab, please inform the instructor as soon as possible
+
+### Lab Exercises
+There will be lab assignments due every week or two. Lab assignments will consist of questions that you answer as you work through the lab material. They may consist of combinations of short answers, code segments, figures, and other data analysis. Lab assignments will be turned via GitHub. You will learn how to do this before the first due date.
 
 ## UCR ACADEMIC POLICIES AND STUDENT SUPPORT
 ### ITS Help and Student Technology Support
