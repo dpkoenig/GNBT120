@@ -16,9 +16,9 @@
 |7|02/18/2025| Genome wide association studies  | | Assignment #6 |
 |7|02/20/2025| Whole Genome Alignment  | | Quiz #7 |
 |8|02/25/2025| Identification of structural variation | | Assignment #7 |
-|8|02/27/2025| | | Quiz #8 |
-|9|03/28/2025|    | | Assignment #8 |
-|9|03/30/2025|    | | Quiz #9 |
+|8|02/27/2025| TBA | | Quiz #8 |
+|9|03/28/2025| TBA | | Assignment #8 |
+|9|03/30/2025| TBA | | Quiz #9 |
 |10|03/04/2025| Project wrap up slide review | | |
 |10|03/06/2025| Project Presentations | | |
 |Finals Week| | | Project write up due date |
