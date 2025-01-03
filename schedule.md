@@ -13,12 +13,12 @@
 |5|02/06/2025| Differential gene expression analysis | TBA | Quiz #5 |
 |6|02/11/2025| Genome Resequencing | TBA | Assignment #5 |
 |6|02/13/2025| Genetic Variant Identification and annotation | TBA | Quiz #6 |
-|7|02/18/2025| Analysis of genetic variation | | Assignment #6 |
-|7|02/20/2025| Genome wide association studies | | Quiz #7 |
-|8|02/25/2025| Whole Genome Alignment | | Assignment #7 |
-|8|02/27/2025| Identification of structural variation  | | Quiz #8 |
-|9|03/28/2025| TBA | | Assignment #8 |
-|9|03/30/2025| TBA | | Quiz #9 |
+|7|02/18/2025| Analysis of genetic variation | TBA | Assignment #6 |
+|7|02/20/2025| Genome wide association studies | TBA | Quiz #7 |
+|8|02/25/2025| Whole Genome Alignment | TBA | Assignment #7 |
+|8|02/27/2025| Identification of structural variation  | TBA | Quiz #8 |
+|9|03/28/2025| TBA | TBA | Assignment #8 |
+|9|03/30/2025| TBA | TBA | Quiz #9 |
 |10|03/04/2025| Project wrap up slide review | | |
 |10|03/06/2025| Project Presentations | | |
 |Finals Week| | | Project write up due date |
