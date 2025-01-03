@@ -1,6 +1,6 @@
 # Schedule
 | Week | Date | Topic | Reading  | Assignments/Quizes |
-| ------------- | -------------  | -------------  | -------------  | -------------  |
+| ------------- | ------------  | ---------------------------------  | -------------  | -------------  |
 |1|01/07/2025| Course intro, connect to HPCC, Markdown intro | | |
 |1|01/09/2025| Introduction to the Linux/Unix environment | | Quiz #1 |
 |2|01/14/2025| Loops and BLAST | | Assignment #1 |
