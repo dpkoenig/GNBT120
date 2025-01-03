@@ -7,27 +7,27 @@ This document was authored by Ian Korf with modifications by Julin Maloof, John 
 ## Preparation
 
 ### Open Rstudio
-Open Rstudio on the cluster [here]https://rstudio.hpcc.ucr.edu. Use your HPCC credentials to log on. Make sure that the project is set to Assignment 01 (upper right corner).
+Open Rstudio on the cluster [here](https://rstudio.hpcc.ucr.edu). Use your HPCC credentials to log on. Make sure that the project is set to Assignment 01 (upper right corner).
 
 ### What to turn in
 You will be required to turn in two documents in markdown format and then to render these to two html documents. You can find blank templates for both of these in your Assignment 01 repository:
 
 1. `unix_exercises.md` should contain the CODE as well as any other text required to answer the Exercises in this document. Be sure to format the code as code blocks using markdown formatting.
 2. `unix_notebook.md` Use this to record the various things you learn today. You might want to go back to this later. Use Markdown formatting.
-From the Rstudio file browser, click to open these in Rstudio and edit them there. When you are ready, click the Preview button and that will create the .html files. Remember to add the html files to your repo.
+From the Rstudio file browser, click to open these in Rstudio and edit them there. When you are ready, click the `Preview` button and that will create the .html files. Remember to add the html files to your repo.
 
 ## Terminal, Command Line, and Shell
-Your interface to Unix will be through a shell program using the command line interface within a terminal application. There are several types of shells and terminals, but the details of these are mostly unnecessary for us. You should know that we are using the bash shell.
+Your interface to Unix will be through a shell program using the command line interface within a terminal application. There are several types of shells and terminals, but the details of these are mostly unnecessary for us. You should know that we are using the [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) shell. Launch your terminal application that you installed in [Lab_1_1]().
 
 The command line is where you type instructions for what you want the computer to do. Some of these statements are “do this now” while others are “let’s get ready to do this.” It may seem silly in this high-tech age to type your commands when you could simply point and click or maybe even use voice activation or gesturing. However, it is much easier to automate analyses through written command. So when it comes time to work with thousands of files, it will be much easier through a command line interface.
 
 ### Terminal Basics
-Launch the terminal application (the name of this will differ from one operating system to another and even within a particular OS you will have several options). Run the date command by typing in the terminal and ending with the return key.
+Launch the terminal application (the name of this will differ from one operating system to another and even within a particular OS you will have several options). Run the `date` command by typing in the terminal and ending with the **return** key.
 
 ```
 date
 ```
-Congratulations, you just made your first Unix statement. You type words on the command line (in this case just one) and then hit return to execute the command. date is but one of hundreds of Unix commands you have at your fingertips (literally). Like most Unix commands, date does more than simply output the current date in the format you just witnessed. You can choose any number of formats and even set the internal clock to a specific time. Let’s explore this a tiny bit. Commands can take arguments. Let’s tell the date program that we want the date to be formatted as year-month-day and with hours-minutes-seconds also. The syntax below will seem arcane, but the various abbreviations should be obvious.
+Congratulations, you just made your first Unix statement. You type words on the command line (in this case just one) and then hit return to execute the command. `date` is but one of hundreds of Unix commands you have at your fingertips (literally). Like most Unix commands, `date` does more than simply output the current date in the format you just witnessed. You can choose any number of formats and even set the internal clock to a specific time. Let’s explore this a tiny bit. Commands can take **arguments**. Let’s tell the `date` program that we want the date to be formatted as year-month-day and with hours-minutes-seconds also. The syntax below will seem arcane, but the various abbreviations should be obvious.
 
 ```
 date "+%Y-%m-%d %H:%M:%S"
@@ -38,18 +38,18 @@ All Unix commands follow the same basic format:
 ```
 COMMAND OPTIONS FILEPATH
 ```
-There may be multiple OPTIONS and multiple FILEPATHs, or they may be omitted. In the examples above, first we see the date command used with no options and no file path:
+There may be multiple OPTIONS and multiple FILEPATHs, or they may be omitted. In the examples above, first we see the `date` command used with no options and no file path:
 ```
 date
 ```
-Then we see the date command with some options.
+Then we see the `date` command with some options.
 ```
 date "+%Y-%m-%d %H:%M:%S"
 ```
-(date is actually a command that never takes a FILEPATH)
+*(`date` is actually a command that never takes a FILEPATH)*
 
 ### Manual Pages
-If you want to learn more information about what date can do, you can either look online or use the Unix built-in manual pages. For a quick refresher on a command, the manual pages are often easiest. But if you have no idea what the command does, than you might want to look for assistance online. To read the manual pages for date you use the man command.
+If you want to learn more information about what `date` can do, you can either look online or use the Unix built-in manual pages. For a quick refresher on a command, the manual pages are often easiest. But if you have no idea what the command does, than you might want to look for assistance online. To read the manual pages for date you use the man command.
 ```
 man date
 ```
