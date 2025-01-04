@@ -19,5 +19,31 @@ You will conduct a good portion of your analysis using an RStudio instance using
 3. From the options box, click on `Git/Svn` on the left hand tab side
 4. Click `Create SSH Key`.
 5. There is no need to setup a passphrase. Newer versions of OS might try to enter a passphrase here, click on `Other Options` and select `Choose My Own Password` and leave it blank.
-6. Click `Create` and `Close`.
-7. 
+6. Click `Create`
+7. Click `Close`
+8. Click `View Public Key`
+9. Press ctrl+c to copy the key to your clipboard.
+
+## Add your public key to github
+Go to github.com and login to your account
+
+Click on the your profile icon near the upper right hand side and then select settings.
+
+Click on `SSH and GPG` keys on the left hand side
+
+Click on `New SSH Key`, upper right hand side
+
+Enter a name for your key, paste in your public key, then press `add SSH key`
+
+## Test the connection
+Open a linux terminal (not R) and type:
+```
+ssh -T git@github.com
+```
+You may get a warning. Go ahead and type yes. You should then get a message that you have successfully authenticated.
+
+## Clone repositories using ssh
+In order to use the public key / private key authentication you must clone your repositories using `ssh` instead of `https`.
+
+I will provide an example of what this means in the next document “Turning in Assignments”
+
