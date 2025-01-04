@@ -95,14 +95,14 @@ We will give you a proper introduction to Rstudio in a couple of weeks. For mark
 * Now you can edit your file in the upper-left pane. If you want to take a look at your formatting, click on the Preview button. (If you click on it now, you will get a blank page since you haven’t typed anything yet) New Bio
 Include:
 
-a header/title
-his or her name
-their major (in bold type)
-their year (in italics)
-A table. This could be of schools attended or places lived. You would have columns for start year, end year, and location. Or make a different table
-a bulleted list of likes
-a link that to a webpage that is relevant to something in their biography.
-Save the final file. You will be asked to turn it in a later class.
+* a header/title
+* his or her name
+* their major (in bold type)
+* their year (in italics)
+* A table. This could be of schools attended or places lived. You would have columns for start year, end year, and location. Or make a different table
+* a bulleted list of likes
+* a link that to a webpage that is relevant to something in their biography.
+* Save the final file. You will be asked to turn it in a later class.
 
 Check the markdown formatted file to make sure that it looks as you intend
 
