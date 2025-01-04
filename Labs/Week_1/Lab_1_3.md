@@ -80,19 +80,19 @@ for v in `ls -p /Volumes | grep BIS180L`
 ```
 \`\`\`
 
-Exercise Two
-Use the Rstudio editor to write a brief biography of your lab partner in Markdown.
+## Exercise Two
+Use the Rstudio editor to write a brief biography of a lab partner in Markdown.
 
 Although Rstudio is designed for R, we can also use it to edit simple markdown files.
 
 We will give you a proper introduction to Rstudio in a couple of weeks. For markdown files, do the following.
 
-Open Rstudio by clicking on the icon on the dock at the bottom of the screen.
-In the lower-right pane, click on +Folder and then create a new folder “Assignment_01” New Folder
-Click on the the Assignment_01 folder that you just created so that the Rstudio file browser is now in that folder.
-Cick on + Blank File and then select text file. New File
-When prompted for a name, name it Biography.md. By adding .md to the end, Rstudio knows to treat this as a Markdown file. New File2
-Now you can edit your file in the upper-left pane. If you want to take a look at your formatting, click on the Preview button. (If you click on it now, you will get a blank page since you haven’t typed anything yet) New Bio
+* Open [Rstudio on the HPCC](https://rstudio.hpcc.ucr.edu)
+* In the lower-right pane, click on +Folder and then create a new folder “Assignment_01” New Folder
+* Click on the the Assignment_01 folder that you just created so that the Rstudio file browser is now in that folder.
+* Cick on + Blank File and then select text file. New File
+* When prompted for a name, name it Biography.md. By adding .md to the end, Rstudio knows to treat this as a Markdown file. New File2
+* Now you can edit your file in the upper-left pane. If you want to take a look at your formatting, click on the Preview button. (If you click on it now, you will get a blank page since you haven’t typed anything yet) New Bio
 Include:
 
 a header/title
