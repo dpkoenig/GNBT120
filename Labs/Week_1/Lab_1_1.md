@@ -16,16 +16,18 @@ You will conduct a good portion of your analysis using an RStudio instance using
 
 1. Begin by connecting to [RStudio](https://rstudio.hpcc.ucr.edu) on the HPCC. Log-in with your HPCC credentials.
 ![](https://dpkoenig.github.io/GNBT120/assets/images/Screenshot1.png)
-2. Choose `Tools` > Global options from the pull-down menu.
-3. From the options box, click on `Git/Svn` on the left hand tab side
+![](https://dpkoenig.github.io/GNBT120/assets/images/Screenshot1.png)
+
+3. Choose `Tools` > Global options from the pull-down menu.
+4. From the options box, click on `Git/Svn` on the left hand tab side
 ![](/GNBT120/assets/images/Screenshot2.png)
-4. Click `Create SSH Key`.
+5. Click `Create SSH Key`.
 ![](/assets/images/Screenshot3.png)
-5. There is no need to setup a passphrase. Newer versions of OS might try to enter a passphrase here, click on `Other Options` and select `Choose My Own Password` and leave it blank.
-6. Click `Create`
-7. Click `Close`
-8. Click `View Public Key`
-9. Press ctrl+c to copy the key to your clipboard.
+6. There is no need to setup a passphrase. Newer versions of OS might try to enter a passphrase here, click on `Other Options` and select `Choose My Own Password` and leave it blank.
+7. Click `Create`
+8. Click `Close`
+9. Click `View Public Key`
+10. Press ctrl+c to copy the key to your clipboard.
 
 ## Add your public key to github
 Go to github.com and login to your account
