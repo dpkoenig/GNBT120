@@ -25,21 +25,25 @@ You will conduct a good portion of your analysis using an RStudio instance using
 7. Click `Create`
 8. Click `Close`
 9. Click `View Public Key`
-10. Press ctrl+c to copy the key to your clipboard.
+![](/GNBT120/assets/images/Screenshot4.png)
+11. Press ctrl+c to copy the key to your clipboard.
 
 ## Add your public key to github
-Go to github.com and login to your account
-
-Click on the your profile icon near the upper right hand side and then select settings.
-
-Click on `SSH and GPG` keys on the left hand side
-
-Click on `New SSH Key`, upper right hand side
-
-Enter a name for your key, paste in your public key, then press `add SSH key`
-
+1. Go to github.com and login to your account
+2. Click on the your profile icon near the upper right hand side and then select settings.
+![](/GNBT120/assets/images/Screenshot5.png)
+4. Click on `SSH and GPG` keys on the left hand side
+![](/GNBT120/assets/images/Screenshot6.png)
+6. Click on `New SSH Key`, upper right hand side
+![](/GNBT120/assets/images/Screenshot7.png)
+7. Enter a name for your key, paste in your public key, then press `add SSH key`
+![](/GNBT120/assets/images/Screenshot8.png)
 ## Test the connection
-Open a linux terminal (not R) and type:
+Open a linux terminal connect to the server subbing your login for NETID:
+```
+ssh -X NETID@cluster.hpcc.ucr.edu
+```
+Complete sign in and then test the key:
 ```
 ssh -T git@github.com
 ```
