@@ -4,3 +4,6 @@ name: "Daniel Koenig"
 markdown: GFM
 show_downloads: false
 theme: jekyll-theme-minimal
+assets:
+    sources:
+        - assets/images      
