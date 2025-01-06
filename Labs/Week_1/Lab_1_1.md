@@ -18,9 +18,9 @@ You will conduct a good portion of your analysis using an RStudio instance using
 ![](/assets/images/Screenshot1.png)
 2. Choose `Tools` > Global options from the pull-down menu.
 3. From the options box, click on `Git/Svn` on the left hand tab side
-![](/images/Screenshot2.png)
+![](/assets/images/Screenshot2.png)
 4. Click `Create SSH Key`.
-![](/images/Screenshot3.png)
+![](/assets/images/Screenshot3.png)
 5. There is no need to setup a passphrase. Newer versions of OS might try to enter a passphrase here, click on `Other Options` and select `Choose My Own Password` and leave it blank.
 6. Click `Create`
 7. Click `Close`
