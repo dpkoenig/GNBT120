@@ -5,4 +5,6 @@
 
 2. [Schedule](https://dpkoenig.github.io/GNBT120/schedule)
 
-3. [Labs]
+3. [Labs](https://dpkoenig.github.io/GNBT120/labs)
+
+4. [Assignments](https://dpkoenig.github.io/GNBT120/assignments)
