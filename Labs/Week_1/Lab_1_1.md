@@ -15,7 +15,7 @@ You can either generate a ssh key pair at the command line or in Rstudio. For th
 You will conduct a good portion of your analysis using an RStudio instance using UCR's High-Preformance Computing Center (HPCC). You can find a lot of additional information about the HPCC [here](https://hpcc.ucr.edu). We will discuss the HPCC a lot more later in the course so don't worry to much about the details at this point. 
 
 1. Begin by connecting to [RStudio](https://rstudio.hpcc.ucr.edu) on the HPCC. Log-in with your HPCC credentials.
-![](images/Screenshot1.png)
+![](GNBT120/images/Screenshot1.png)
 2. Choose `Tools` > Global options from the pull-down menu.
 3. From the options box, click on `Git/Svn` on the left hand tab side
 ![](/images/Screenshot2.png)
