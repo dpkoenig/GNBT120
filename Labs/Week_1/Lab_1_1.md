@@ -16,13 +16,13 @@ You will conduct a good portion of your analysis using an RStudio instance using
 
 1. Begin by connecting to [RStudio](https://rstudio.hpcc.ucr.edu) on the HPCC. Log-in with your HPCC credentials.
 ![](https://dpkoenig.github.io/GNBT120/assets/images/Screenshot1.png)
-![](https://dpkoenig.github.io/GNBT120/assets/images/Screenshot1.png)
+![](/GNBT120/assets/images/Screenshot1.png)
 
 3. Choose `Tools` > Global options from the pull-down menu.
 4. From the options box, click on `Git/Svn` on the left hand tab side
 ![](/GNBT120/assets/images/Screenshot2.png)
 5. Click `Create SSH Key`.
-![](/assets/images/Screenshot3.png)
+![](/GNBT120/assets/images/Screenshot3.png)
 6. There is no need to setup a passphrase. Newer versions of OS might try to enter a passphrase here, click on `Other Options` and select `Choose My Own Password` and leave it blank.
 7. Click `Create`
 8. Click `Close`
