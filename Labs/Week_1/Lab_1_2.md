@@ -15,24 +15,30 @@ Rstudio allows you to work in projects to help you keep your files organized. Fu
 
 ### Example: Assignment 1
 #### Accept the assignment link to create a Gihub repo
-On the [assignments page](), click on the assignment 1 link, click on the `Accept This Assignment` button
-
-Refresh the next screen until you see a link to your repo:
-
-Click on the link to go to your repository for this assignment.
+1. On the [assignments page](https://dpkoenig.github.io/GNBT120/assignments), click on the assignment 1 link, click on the `Accept This Assignment` button
+2. Wait until you see a link to your repo then click on the link to go to your repository for this assignment.
+![](/GNBT120/assets/images/Lab_1_2_1.png)
 
 ## Clone your Assignment repo to the HPCC using Rstudio
-The next step is to clone it to your instance using Rstudio. Open [Rstudio on the HPCC](https://rstudio.hpcc.ucr.edu) as described in `Lab_1_1`. Click on `Project` on the upper right-hand side and then `New Project`
-
-Next click on `Version Control`
-
-Click on `Git`
-
-Now, paste in the SSH url for your repo:
-
-Optionally, click `Browse` and select or create a directory (folder) for your assignment. I am keeping mine in a directory called `~bigdata/Assignments`
-
-Now click `Create Project`
+The next step is to clone it to your instance using Rstudio.
+1. Open a new browser window and then navigate to [Rstudio on the HPCC](https://rstudio.hpcc.ucr.edu) and log in as described in `Lab_1_1`.
+2. Click on `Project` on the upper right-hand side and then `New Project`
+![](/GNBT120/assets/images/Lab_1_2_2.png)
+3. Next click on `Version Control`
+![](/GNBT120/assets/images/Lab_1_2_3.png)
+4. Click on `Git`
+![](/GNBT120/assets/images/Lab_1_2_4.png)
+5. Return to the GitHub assignment page. Click on the `Code` button.
+![](/GNBT120/assets/images/Lab_1_2_5.png)
+6. Make sure that you click the SSH tab, then copy the link below.
+![](/GNBT120/assets/images/Lab_1_2_6.png)
+7. Return to the RStudio tab, then paste in the SSH url into the `Repository URL` spot. Then click the `Browse` button.
+![](/GNBT120/assets/images/Lab_1_2_7.png)
+8. Navigate to `bigdata`
+![](/GNBT120/assets/images/Lab_1_2_8.png)
+9. Click `New Folder` and create a new folder (I will call this folder Assignment_1)
+10. Click `Choose`
+11. Now click `Create Project`
 
 Done! You now have an Rstudio Project for Assignment 01 and it is linked to your github repository.
 
@@ -47,8 +53,8 @@ Summary:
 * Untracked files are shown with a “?”
 * Files that have been modified since the last commit are shown with a “M”
 * Files that are staged to be added are shown with an “A”
-* If you want to stage a new or changed file for a commit click on the checkbox 
+* If you want to stage a new or changed file for a commit click on the checkbox
 * You can then click on “commit” to open up a new window that shows you the changes
-* Type a commit message in the box and press commit! 
+* Type a commit message in the box and press commit!
 * Now press the push button to push you changes up to github.
 * There is also a pull button to pull changes down to your instance or local computer.
