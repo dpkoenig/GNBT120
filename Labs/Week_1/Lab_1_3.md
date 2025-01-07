@@ -1,4 +1,7 @@
 # Introduction to Markdown
+## Attribution
+This lab was originally developed by Julin Maloof and modified by Daniel Koenig
+
 [Markdown](https://en.wikipedia.org/wiki/Markdown) is a simple system for formatting text. It is easy to type, human readable, and easy to format to html or PDF. Almost all of the documents generated for this lab class are written in markdown.
 
 We will require that your lab reports be generated in markdown or the variant [Rmarkdown](https://rmarkdown.rstudio.com)

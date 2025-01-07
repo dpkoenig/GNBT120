@@ -1,4 +1,7 @@
 # Connecting to RStudio and turning in projects
+## Attribution
+This lab was originally developed by Julin Maloof and modified by Daniel Koenig
+
 ## Overview
 We will use git to turn in assignments. I will post a link for each assignment. The link will ask you to logon to GitHub and join the GNBT 120 classroom.
 

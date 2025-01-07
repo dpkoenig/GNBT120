@@ -1,4 +1,8 @@
 # Connect to RStudio and setup git authentication
+## Attribution
+This lab was originally developed by Julin Maloof and modified by Daniel Koenig
+
+## Lab
 You will use Git to store your work and to turn in your assignments. Git does not allow you to use your password to push/pull your repositories. Instead, we will use an [ssh public key](https://help.ubuntu.com/community/SSH/OpenSSH/Keys) to authenticate your identity.
 
 In this method of authentication you generate a public key and a private key. The private key stays on your computer (or on the compute cluster) and the public key is given to 3rd parties who will want to verify your identity (in this case GitHub).
