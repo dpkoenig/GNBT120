@@ -15,7 +15,7 @@ The High Preformance Computing Center Cluster is a shared research computing sys
 
 We have already created accounts for you on the HPCC, and we want to make sure you can connect using your UCR netID using the following steps.
 1. Open you terminal application. You should see something that looks a bit like this:
-![](/GNBT120/assets/images/prelim1)
+![](/GNBT120/assets/images/prelim1.png)
 
 2. Enter the following substituting your netID in for NETID:
 ```
@@ -24,7 +24,7 @@ ssh -X NETID@cluster.hpcc.ucr.edu
 3. You will be prompted to enter your password. When you type the cursor will not move and you will not see anything printed.
 4. You will then be asked to authenticate via Duo by entering `1` and `return` (like when you connect to other UCR resources).
 5. If login was successful you will see something like this:
-![](/GNBT120/assets/images/prelim2)
+![](/GNBT120/assets/images/prelim2.png)
 
 6. Finally, if this is your first time logging in, you need to reset your password. Type `passwd`, and then follow the instructions. **MAKE SURE TO KEEP TRACK OF YOUR PASSWORD!**
 7. Once you are done, you can log off by typing `exit`.
