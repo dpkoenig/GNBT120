@@ -13,7 +13,7 @@ In this course we will interact with the Unix/Linux operating system using a ter
 # Connecting to the HPCC
 The High Preformance Computing Center Cluster is a shared research computing system availiable at UCR to researchers and to students in classes that require computing resources. I will discuss this resource in more detail in lecture, and you can also read an [introduction to the HPCC](https://girke.bioinformatics.ucr.edu/GEN242/tutorials/linux/linux/) and explore the detailed [HPCC manuals](https://hpcc.ucr.edu) for more information.
 
-We have already created accounts for you on the HPCC, and we want to make sure you can connect using your UCR netID using the following steps.
+I have already created accounts for you on the HPCC, and we want to make sure you can connect using your UCR netID using the following steps.
 1. Open you terminal application. You should see something that looks a bit like this:
 ![](/GNBT120/assets/images/prelim1.png)
 
