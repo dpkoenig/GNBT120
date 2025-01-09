@@ -389,7 +389,7 @@ total 38M
 ```
 There are two files, one contains genomic sequence, the other contains protein. The genome is 31 megabytes. That’s not a very big file, but it’s too big to email. A knee-jerk reaction might be to open this in your text editor. That’s a bad idea for several reasons: (1) You shouldn’t edit data files. (2) It takes a lot more memory to edit a file than view its contents. (3) The file is binary. Let’s do it anyway. **Use tab completion** to do the following.
 ```
-nano ~/data/C.elegans/c_elegans.PRJNA13758.WS269.genomic.fa.gz
+nano ~/shared/C.elegans/c_elegans.PRJNA13758.WS269.genomic.fa.gz
 ```
 You should notice two things. First the file is not writable meaning we cannot edit it. Second the file is binary, so it looks like gibberish. We need to uncompress it to see its contents. The permissions we displayed earlier indicate that the file can only be read and executed. These permissions are in place to prevent the accidental editing of the data files. The file name is also hopelessly long. Let’s organize ourselves a little. First, let’s create a directory where we can collect our work.
 ```
