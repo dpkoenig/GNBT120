@@ -22,7 +22,15 @@ Your interface to Unix will be through a shell program using the command line in
 The command line is where you type instructions for what you want the computer to do. Some of these statements are “do this now” while others are “let’s get ready to do this.” It may seem silly in this high-tech age to type your commands when you could simply point and click or maybe even use voice activation or gesturing. However, it is much easier to automate analyses through written command. So when it comes time to work with thousands of files, it will be much easier through a command line interface.
 
 ### Terminal Basics
-Launch the terminal application (the name of this will differ from one operating system to another and even within a particular OS you will have several options). Run the `date` command by typing in the terminal and ending with the **return** key.
+Launch the terminal application (the name of this will differ from one operating system to another and even within a particular OS you will have several options).
+
+Log in to the hpcc cluster:
+
+```
+ssh -X NETID@cluster.hpcc.ucr.edu
+```
+
+Run the `date` command by typing in the terminal and ending with the **return** key.
 
 ```
 date
@@ -124,7 +132,7 @@ Another useful command is `du -h` (disk usage) which shows how much space each o
 
 #### Exercise Three
 
-Your instance’s main file system is located at `/dev/sda1`. Using what you know about Unix commands and the `df` function, print out how much free space your instance has available in a human-readable format.
+The HPCC has many file systems. One is located at `/dev/nvme0n1`. Using what you know about Unix commands and the `df` function, print out how much free space your is availiable on this file system in a human-readable format.
 
 *End of exercise three*
 
@@ -371,26 +379,26 @@ Yuck. Most of the programs you run on a computer are binary files. Generally spe
 
 Bioinformatics often deals with large text files. These can contain whole genomes, massive RNA-seq experiments, or thousands of spectra. You need to appreciate the size of these files so that you don’t do stupid stuff with them, like email them to a colleague. Let’s look at the Caenorhabditis elegans genome. First, let’s see how big it is. We’ll use the `ls` with the `-h` and `-l` options so that we can see the size of the file. **Please use tab completion when typing the following**.
 ```
-ls -lh ~/data/C.elegans
+ls -lh ~/shared/C.elegans
 ```
 You should see something that looks similar to this:
 ```
-total 34M
--r-xr-xr-x 1 exouser exouser  28M Mar 28  2019 c_elegans.PRJNA13758.WS269.genomic.fa.gz
--r-xr-xr-x 1 exouser exouser 5.4M Apr  1  2019 c_elegans.PRJNA13758.WS269.protein.fa.gz
+total 38M
+-rw-r--r-- 1 dkoenig gnbt120  31M Apr 23  2015 GCF_000002985.6_WBcel235_genomic.fa.gz
+-rw-r--r-- 1 dkoenig gnbt120 6.8M Dec 13 10:07 GCF_000002985.6_WBcel235_protein.fa.gz
 ```
-There are two files, one contains genomic sequence, the other contains protein. The genome is 28 megabytes. That’s not a very big file, but it’s too big to email. A knee-jerk reaction might be to open this in your text editor. That’s a bad idea for several reasons: (1) You shouldn’t edit data files. (2) It takes a lot more memory to edit a file than view its contents. (3) The file is binary. Let’s do it anyway. **Use tab completion** to do the following.
+There are two files, one contains genomic sequence, the other contains protein. The genome is 31 megabytes. That’s not a very big file, but it’s too big to email. A knee-jerk reaction might be to open this in your text editor. That’s a bad idea for several reasons: (1) You shouldn’t edit data files. (2) It takes a lot more memory to edit a file than view its contents. (3) The file is binary. Let’s do it anyway. **Use tab completion** to do the following.
 ```
 nano ~/data/C.elegans/c_elegans.PRJNA13758.WS269.genomic.fa.gz
 ```
 You should notice two things. First the file is not writable meaning we cannot edit it. Second the file is binary, so it looks like gibberish. We need to uncompress it to see its contents. The permissions we displayed earlier indicate that the file can only be read and executed. These permissions are in place to prevent the accidental editing of the data files. The file name is also hopelessly long. Let’s organize ourselves a little. First, let’s create a directory where we can collect our work.
 ```
-mkdir ~/Project0
-cd ~/Project0
+mkdir ~/bigdata/Project0
+cd ~/bigdata/Project0
 ```
 The path to the genome file is long. We can simplify it with an alias. The `ln -s` command creates a link or alias from this directory to the original file.
 ```
-ln -s ~/data/C.elegans/c_elegans.PRJNA13758.WS269.genomic.fa.gz ./genome.gz
+ln -s ~/shared/C.elegans/c_elegans.PRJNA13758.WS269.genomic.fa.gz ./genome.gz
 ls -lF
 ```
 Note what `ls -lF` shows you. The l at the beginning of the permissions shows you that the file is an alias. The arrow shows you what the alias points to.
@@ -639,4 +647,3 @@ You can put processes into the **background**. This will mean the terminal no lo
 |top|top|display processes running on your system|
 |touch|touch f|update file f modification time (create if needed)|
 |wc|wc f|count the lines, words, and characters in file f|
-
