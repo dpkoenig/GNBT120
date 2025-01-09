@@ -436,7 +436,7 @@ cat chromosomes.txt
 ```
 #### Exercise four
 
-The file `~/shared/A.thaliana/Araport11_genes.201606.pep.fasta.gz` contains all of the predicted protein sequences from genes in the Arabidopsis genome. Using the commands you have learned so far, write a command or set of commands to display the name of the last protein in the file (displaying the whole line that contains the protein name is fine). In your answer include both the commands that you used (formatted as a code block) and the output from those commands.
+The file `~/shared/Athaliana/Araport11_genes.201606.pep.fasta.gz` contains all of the predicted protein sequences from genes in the Arabidopsis genome. Using the commands you have learned so far, write a command or set of commands to display the name of the last protein in the file (displaying the whole line that contains the protein name is fine). In your answer include both the commands that you used (formatted as a code block) and the output from those commands.
 
 *End of exercise four*
 
