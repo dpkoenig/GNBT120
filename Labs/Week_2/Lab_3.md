@@ -35,7 +35,12 @@ These should have been created when you cloned your repository.
 ```
 srun --mem=1gb --cpus-per-task 1 --ntasks 1 --time 5:00:00 --pty bash -l
 ```
-3. Change directories into your project directory (inside the bigdata directory)
+3. You will need to use the blast software to conduct the following lab. BLAST is installed on the cluster, but you need to load it to use it. The cluster has a software management system where specific software can be loaded using `module`. you can see all the software that can be loaded by entering the command `module avail`. Enter the following to load blast.
+```
+module load ncbi-blast/2.16.0+
+```
+4. Change directories into your project directory (inside the bigdata directory)
+
 ## Setup
 Please find a template for answering the exercises in the `scripts` folder. Open `Assignment_2_BLAST_template.md` in the editor of your choice (RStudio or nano, for example)
 
@@ -78,6 +83,7 @@ Let’s begin by practicing our Linux skills by summarizing the file content. St
 * sequence title
 * accession number (a unique identifier for the sequence).
 * mystery (figure out what the unnamed field is)
+
 **Exercise 3:** How many of the viruses come from a domesticated cat (*Felis catus*) host? How many come from a human host? How many were isolated in the United States? Show the commands used to answer these questions.
 
 *Hint 1: Look at the `man` entry for `grep` to figure out how to count things*
@@ -105,11 +111,12 @@ Stop and Think: what do the `-f` and `-d` options do? You can look at `man cut` 
 2. Number of sequences in the file.
 3. Total number of basepairs or amino acids in the file (see hint 2 below!)
 4. Average sequence length.
+
 *Hint 1: Review the “Just enough Unix” tutorial to determine the correct commands needed to answer these questions. You may need to use the `man` pages to learn about options to give the commands.*
 
 *Hint 2: The total number of basepairs will be the number of nucleotide letters. This includes letters other than the usual “ACGT”. If you are curious in the meaning of these new letters you can look up their definitions here. Finding the size of the genome is a little complicated because it’s* **not** *the size of the file. The files also have newline characters and FASTA headers. You need to subtract these. Fortunately, you can do all of this with the Unix skills you already have. Use the `man` pages!*
 
-Part 3: Build BLAST database
+## Part 3: Build BLAST database
 Now that we have explored the files some, let’s get BLASTING!
 
 In order for BLAST to search efficiently if needs to build a database of words for each sequence in the reference that we want to search. This only needs to be done once.
