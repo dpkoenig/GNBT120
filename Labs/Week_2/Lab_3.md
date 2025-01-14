@@ -127,7 +127,7 @@ The command is `makeblastdb`. Take a look at the help file to see how to run it:
 ```
 makeblastdb -help
 ```
-Can you figure out how to specify the input file and the sequence type? If you get stuck, use your cursor to select the hidden text underneath this sentence for a hint.
+Can you figure out how to specify the input file and the sequence type? If you get stuck, use the text underneath this sentence for a hint.
 ```
 makeblastdb -in ncbi_virus_110119_2.txt -dbtype nucl
 ```
