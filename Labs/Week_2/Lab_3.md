@@ -44,8 +44,8 @@ Download the files with `wget` as follow. `wget` gets things from the Web…
 
 (OK to cut and paste this…)
 ```
-wget https://bis180ldata.s3.amazonaws.com/downloads/ncbi_virus_110119_2.txt.gz
-wget https://bis180ldata.s3.amazonaws.com/downloads/patient_viral.txt.gz
+wget https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/ncbi_virus_110119_2.txt.gz
+wget https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/patient_viral.txt.gz
 ```
 
 Let’s begin by practicing our Linux skills by summarizing the file content. Start by taking a look at each file using `zless` or `zmore`.
@@ -105,7 +105,7 @@ Now that we have explored the files some, let’s get BLASTING!
 
 In order for BLAST to search efficiently if needs to build a database of words for each sequence in the reference that we want to search. This only needs to be done once.
 
-You only need to buld a database for `ncbi_virus_110119_2.txt`
+You only need to build a database for `ncbi_virus_110119_2.txt`
 
 The command is `makeblastdb`. Take a look at the help file to see how to run it:
 ```
