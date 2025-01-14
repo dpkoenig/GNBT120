@@ -33,7 +33,7 @@ These should have been created when you cloned your repository.
 2. Start an interactive job on the cluster to conduct your analysis. I will discuss this further in a future class but for now use the following to connect. You can find more information about initiating jobs on the cluster [here](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/). Enter the following to generate an interactive job.
 
 ```
-srun --mem=1gb --cpus-per-task 1 --ntasks 1 --time 5:00:00 --x11 --pty bash -l
+srun --mem=1gb --cpus-per-task 1 --ntasks 1 --time 5:00:00 --pty bash -l
 ```
 3. Change directories into your project directory (inside the bigdata directory)
 ## Setup
