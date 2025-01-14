@@ -9,3 +9,5 @@
 |2|1|1/9/2025|[Introduction to Unix/Linux](https://dpkoenig.github.io/GNBT120/Labs/Week_1/Lab_1_4)|
 |3|2|1/14/2025|[Blast](https://dpkoenig.github.io/GNBT120/Labs/Week_2/Lab_3)|
 |3|2|1/14/2025|[For Loops](https://dpkoenig.github.io/GNBT120/Labs/Week_2/Lab_4)|
+|3|2|1/14/2025|[Blast continued](https://dpkoenig.github.io/GNBT120/Labs/Week_2/Lab_5)|
+
