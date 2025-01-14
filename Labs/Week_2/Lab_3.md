@@ -12,7 +12,7 @@ What is the origin of this virus?
 2. We will focus on those questions over the next few days, explore how BLAST parameters affect search outcomes, and practice our Linux skills along the way.
 
 ## Part 1: Getting Organized
-# Open the repo in Rstudio as a project
+### Open the repo in Rstudio as a project
 On the assignments page, click on the assignment 2 link to create your repo, then clone it into Rstudio.
 
 For this part of assignment 2:
@@ -28,6 +28,15 @@ A common way to organize projects is to create the following three directories:
 * scripts scripts or markdown files used for the analysis
 These should have been created when you cloned your repository.
 
+## Connect to the cluster and learn how to create an interactive job
+1. Connect to the server as you learned [here](https://dpkoenig.github.io/GNBT120/Labs/Week_1/Lab_1_Preliminaries)
+2. Start an interactive job on the cluster to conduct your analysis. I will discuss this further in a future class but for now use the following to connect. You can find more information about initiating jobs on the cluster [here](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/). Enter the following to generate an interactive job.
+
+```
+srun --mem=1gb --cpus-per-task 1 --ntasks 1 --time 5:00:00 --x11 --pty bash -l
+```
+3. Change directories into your project directory (inside the bigdata directory)
+## Setup
 Please find a template for answering the exercises in the `scripts` folder. Open `Assignment_2_BLAST_template.md` in the editor of your choice (RStudio or nano, for example)
 
 There are two sequence files that you will be working with in this lab, you will need to download them both (see instructions below).
