@@ -4,4 +4,5 @@ Edit the markdown template to answer the questions. The assignment will be turne
 
 |Title|Where|Date Due|
 |:--:|:--:|:--:|
-|Just Enough Unix | [Assignment_1](https://classroom.github.com/a/KzWQ0xgs) | Januaury 09, 1:10 PM|
+|Just Enough Unix | [Assignment_1](https://classroom.github.com/a/KzWQ0xgs) | January 16, 1:10 PM|
+|Blast and For Loops|[Assignment_2](https://classroom.github.com/a/fBuXDdNq)| January 12, 1:10 PM|
