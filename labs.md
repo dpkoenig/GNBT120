@@ -7,3 +7,5 @@
 |1|1|1/7/2025|[Turning in projects](https://dpkoenig.github.io/GNBT120/Labs/Week_1/Lab_1_2)|
 |1|1|1/7/2025|[Introduction to Markdown](https://dpkoenig.github.io/GNBT120/Labs/Week_1/Lab_1_3)|
 |2|1|1/9/2025|[Introduction to Unix/Linux](https://dpkoenig.github.io/GNBT120/Labs/Week_1/Lab_1_4)|
+|3|2|1/14/2025|[Introduction to Unix/Linux](https://dpkoenig.github.io/GNBT120/Labs/Week_2/Lab_3)|
+|3|2|1/14/2025|[Introduction to Unix/Linux](https://dpkoenig.github.io/GNBT120/Labs/Week_2/Lab_4)|
