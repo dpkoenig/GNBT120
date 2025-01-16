@@ -3,6 +3,9 @@
 ## Orientation
 This is a continuation of the BLAST lab focused on identifying the likely cause of a respiratory illness. In the previous lab you learned how to run blast and identified a candidate for the disease agent. Here we will explore this candidate in more detail and learn how to use for loops to automate running multiple blast searches.
 
+## Preliminaries
+Make sure that you have logged into the hpcc and have started an interactive job as shown in part one of this three part lab!
+
 ## Part 5: Focus on best candidate
 We now want to do some more analyses on the best candidate identified in Exercise 7. Looking only at one or two BLAST hits may be misleading. In addition, to understand where this virus came from we should build a phylogenetic tree. To accomplish these tasks we want to optimize our blast search.
 
@@ -72,7 +75,7 @@ You can specify which one you want using the `-task` flag, e.g. `-task megablast
 
 By default `blastn` runs `megablast`. This was probably good for our first task (finding very similar sequences in order to ID the disease virus) but isn’t good for finding a broader spectrum of related sequences.
 
-Exercise 12:
+**Exercise 12:**
 
 Repeat the `blastn` searches but now comparing `megablast`, `dc-megablast`, and `blastn`. To focus on how task options other than word_size affected these searches, specify a word_size of 11. Use an evalue limit of 1e-3. Add the time and number of (unique) hits to your table. Comment on the differences. For these sequences is word_size or algorithm (task) more important for the number of sequences found?
 
