@@ -6,7 +6,7 @@
 |2|01/14/2025| Loops and BLAST | Chapter 6 of Bioinformatics for Beginners | Assignment #1 |
 |2|01/16/2025| BLAST (cont.) | TBA | Quiz #2 |
 |3|01/21/2025| Catch up day | NA ||
-|3|01/23/2025| Intro to R and RStudio | TBA | Assignment #2 |
+|3|01/23/2025| Intro to R and RStudio | [R for data science](https://r4ds.had.co.nz/) Chapters 4, 5, 6, 10, 18, 27; Buffalo Chapter 8.| Assignment #2 |
 |4|01/28/2025| DNA Sequence Datasets | TBA | Quiz #3 |
 |4|01/30/2025| Whole genome Assembly | TBA | Assignment #3 |
 |5|02/04/2025| Transcriptome Sequencing | TBA | Quiz #4 |
