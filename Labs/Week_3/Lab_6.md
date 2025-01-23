@@ -112,11 +112,11 @@ Lets re-create the “Hello World” program above. Enter it into your .Rmd file
 # A silly R program
 # This is the first program that Professor Maloof asked us to write in R
 
-\`\`\`{r hello_world2}
+\\\{r hello_world2}
 
 print("Hello World")
 
-\`\`\`
+\\\
 ```
 You can still execute R-code lines one at a time with Ctrl-Enter to check your code. But when each chunk is complete you should run the entire chunk with the right arrow or by typing Ctrl-Shift-Enter
 
