@@ -37,19 +37,19 @@ We will work with the word size 11 and word size 28 `megablast` files, the word 
 It is OK to cut and paste the code below. In fact, **please cut and paste the code below**
 ```
 download.file(url="https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/blastout.WS28.tsv.gz",
-              destfile = "../input/blastout.mega.WS28.tsv.gz") # use this to put the file in a different directory
+              destfile = "input/blastout.mega.WS28.tsv.gz") # use this to put the file in a different directory
 
 download.file(url="https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/blastout.WS11.tsv.gz",
-              destfile = "../input/blastout.mega.WS11.tsv.gz") # use this to put the file in a different directory
+              destfile = "input/blastout.mega.WS11.tsv.gz") # use this to put the file in a different directory
 
 download.file(url="https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/blastout.task_blastn.tsv.gz",
-              destfile = "../input/blastout.task_blastn.WS11.tsv.gz") # use this to put the file in a different directory
+              destfile = "input/blastout.task_blastn.WS11.tsv.gz") # use this to put the file in a different directory
 
 download.file(url="https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/blastout.tblastx.tsv.gz",
-              destfile = "../input/blastout.tblastx.tsv.gz") # use this to put the file in a different directory
+              destfile = "input/blastout.tblastx.tsv.gz") # use this to put the file in a different directory
 
 download.file(url="https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/blastout.task_dc-megablast.tsv.gz",
-              destfile = "../input/blastout.task_dc-megablast.WS11.tsv.gz") # use this to put the file in a different directory
+              destfile = "input/blastout.task_dc-megablast.WS11.tsv.gz") # use this to put the file in a different directory
 ```
 *If you are having trouble downloading the files, first make sure you are in the correct working directory*
 
@@ -62,7 +62,7 @@ One bummer is that the columns names for the columns in these files are not in s
 
 This is a bit tricky; the headers are on the fourth line of the file. I am telling R to read the first four lines of the file so that we can get the header first.
 ```
-headers <- readLines("../input/blastout.mega.WS11.tsv.gz", n = 4)
+headers <- readLines("input/blastout.mega.WS11.tsv.gz", n = 4)
 headers <- headers[4] # only keep the 4th line
 headers
 ```
@@ -91,11 +91,11 @@ Now let’s read in the real data, and specify to use the headers object we just
 
 **CUT AND PASTE THIS**
 ```
-megaWS11 <- read_tsv("../input/blastout.mega.WS11.tsv.gz", col_names=headers, comment="#")
-megaWS28 <- read_tsv("../input/blastout.mega.WS28.tsv.gz", col_names=headers, comment="#")
-blastnWS11 <- read_tsv("../input/blastout.task_blastn.WS11.tsv.gz", col_names=headers, comment="#")
-dc_megaWS11 <- read_tsv("../input/blastout.task_dc-megablast.WS11.tsv.gz", col_names=headers, comment="#")
-tblastx <- read_tsv("../input/blastout.tblastx.tsv.gz", col_names=headers, comment="#")
+megaWS11 <- read_tsv("input/blastout.mega.WS11.tsv.gz", col_names=headers, comment="#")
+megaWS28 <- read_tsv("input/blastout.mega.WS28.tsv.gz", col_names=headers, comment="#")
+blastnWS11 <- read_tsv("input/blastout.task_blastn.WS11.tsv.gz", col_names=headers, comment="#")
+dc_megaWS11 <- read_tsv("input/blastout.task_dc-megablast.WS11.tsv.gz", col_names=headers, comment="#")
+tblastx <- read_tsv("input/blastout.tblastx.tsv.gz", col_names=headers, comment="#")
 ```
 Look in the right hand pane (click on the “Environment” tab if needed) and you can see a brief description of the data. There are 12545 rows and 13 columns in the first file. It is important that you look at files after they have been read in with the `head()` and/or `summary()` functions to make sure that the data is as you expect.
 ```
