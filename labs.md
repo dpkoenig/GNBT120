@@ -10,5 +10,6 @@
 |3|2|1/14/2025|[Blast](https://dpkoenig.github.io/GNBT120/Labs/Week_2/Lab_3)|
 |3|2|1/14/2025|[For Loops](https://dpkoenig.github.io/GNBT120/Labs/Week_2/Lab_4)|
 |3|2|1/14/2025|[Blast continued](https://dpkoenig.github.io/GNBT120/Labs/Week_2/Lab_5)|
-|4|3|1/23/2025|[Rstudio and tidyverse](https://dpkoenig.github.io/GNBT120/Labs/Week_3/Lab_6)|
+|4|3|1/23/2025|[Rstudio](https://dpkoenig.github.io/GNBT120/Labs/Week_3/Lab_6)|
+|4|3|1/23/2025|[tidyverse](https://dpkoenig.github.io/GNBT120/Labs/Week_3/Lab_7)|
 
