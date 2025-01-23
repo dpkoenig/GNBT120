@@ -36,19 +36,19 @@ We will work with the word size 11 and word size 28 `megablast` files, the word 
 
 It is OK to cut and paste the code below. In fact, **please cut and paste the code below**
 ```
-download.file(url="https://bis180ldata.s3.amazonaws.com/downloads/Assignment2/blastout.WS28.tsv.gz",
+download.file(url="https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/blastout.WS28.tsv.gz",
               destfile = "../input/blastout.mega.WS28.tsv.gz") # use this to put the file in a different directory
 
-download.file(url="https://bis180ldata.s3.amazonaws.com/downloads/Assignment2/blastout.WS11.tsv.gz",
+download.file(url="https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/blastout.WS11.tsv.gz",
               destfile = "../input/blastout.mega.WS11.tsv.gz") # use this to put the file in a different directory
 
-download.file(url="https://bis180ldata.s3.amazonaws.com/downloads/Assignment2/blastout.task_blastn.tsv.gz",
+download.file(url="https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/blastout.task_blastn.tsv.gz",
               destfile = "../input/blastout.task_blastn.WS11.tsv.gz") # use this to put the file in a different directory
 
-download.file(url="https://bis180ldata.s3.amazonaws.com/downloads/Assignment2/blastout.tblastx.tsv.gz",
+download.file(url="https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/blastout.tblastx.tsv.gz",
               destfile = "../input/blastout.tblastx.tsv.gz") # use this to put the file in a different directory
 
-download.file(url="https://bis180ldata.s3.amazonaws.com/downloads/Assignment2/blastout.task_dc-megablast.tsv.gz",
+download.file(url="https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/blastout.task_dc-megablast.tsv.gz",
               destfile = "../input/blastout.task_dc-megablast.WS11.tsv.gz") # use this to put the file in a different directory
 ```
 *If you are having trouble downloading the files, first make sure you are in the correct working directory*
