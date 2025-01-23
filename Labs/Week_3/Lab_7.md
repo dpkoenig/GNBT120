@@ -127,9 +127,8 @@ Wow that is a lot of hits for tblastx. Let’s explore a bit more:
 * Total alignment length (sum of all alignment lengths)
 * Average percent identity
 For full credit start with `blast.results` and only call the `summarize` function once (you can have multiple arguments in the `summarize` function). Your code should produce a table as output (you do not need to type the table manually).
-**Exercise 3:**
 
-We have multiple hits per subject and we want to focus on the unique hits. Make a new object called `uniq.blast.results` that retains the single longest alignment for each subject in each strategy. Hint: use one of the slice functions.
+**Exercise 3:** We have multiple hits per subject and we want to focus on the unique hits. Make a new object called `uniq.blast.results` that retains the single longest alignment for each subject in each strategy. Hint: use one of the slice functions.
 
 Did it work? If so we should get the same counts as in the Linux lab. Check it:
 ```
@@ -147,6 +146,7 @@ If your counts don’t match you did something wrong.
 * What proportion of hits have an e-value of 0?
 * What proportion of hits have a percent identity < 70?
 * What proportion of hits have an E-value of 0 and have a percent identity less than 70?
+
 **hint:** It is helpful to take advantage of the fact that the logical value TRUE also has the numeric value of 1, whereas false = 0. So, for example, if we wanted to count the numbers > 5 in the sequence of numbers from 1:10 you could use this code:
 ```
 test <- 1:10 #create sequence of numbers
