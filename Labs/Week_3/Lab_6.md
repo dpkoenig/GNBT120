@@ -108,7 +108,7 @@ To see how the fully formatted document would look, click the “Knit” button 
 You can now remove everything below the lower “—” (line 6) in the R markdown file and enter your own content.
 
 Lets re-create the “Hello World” program above. Enter it into your .Rmd file.
-```
+````
 # A silly R program
 # This is the first program that Professor Maloof asked us to write in R
 
@@ -117,7 +117,7 @@ Lets re-create the “Hello World” program above. Enter it into your .Rmd file
 print("Hello World")
 
 ```
-```
+````
 You can still execute R-code lines one at a time with Ctrl-Enter to check your code. But when each chunk is complete you should run the entire chunk with the right arrow or by typing Ctrl-Shift-Enter
 
 I recommend writing separate chunks for each bit of output to be produced.
