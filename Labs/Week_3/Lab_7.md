@@ -1,7 +1,5 @@
 # Analyze BLAST results in R with Tidyverse
 This lab was originally developed by Julin Maloof and modified by Daniel Koenig
-## Clone the Assignment 3 Respository
-On the assignments page, click on the [assignment 3](https://dpkoenig.github.io/GNBT120/assignments) link and then start a new project in R by cloning the repo.
 
 ## Welcome to the Tidyverse
 [Tidyverse](https://www.tidyverse.org/) is a collection of R packages that make data manipulation and processing easier.

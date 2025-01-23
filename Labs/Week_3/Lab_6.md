@@ -1,4 +1,8 @@
 # Introduction to R
+Connect to Rstudio on the hpcc, download and open project for Assignment 3
+## Clone the Assignment 3 Respository
+On the assignments page, click on the [assignment 3](https://dpkoenig.github.io/GNBT120/assignments) link and then start a new project in R by cloning the repo.
+
 ## The swirl tutorial
 Install the tutorial
 ```
