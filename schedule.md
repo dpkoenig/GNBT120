@@ -7,8 +7,8 @@
 |2|01/16/2025| BLAST (cont.) | TBA | Quiz #2 |
 |3|01/21/2025| Catch up day | NA ||
 |3|01/23/2025| Intro to R and RStudio | [R for data science](https://r4ds.had.co.nz/) Chapters 4, 5, 6, 10, 18, 27; Buffalo Chapter 8.| Assignment #2 |
-|4|01/28/2025| Intro to R and RStudio continued | TBA | Quiz #3 and Assignment #1 edits |
-|4|01/30/2025| DNA Sequence Datasets | TBA | Assignment #3 |
+|4|01/28/2025| Intro to R and RStudio continued | TBA | Quiz #3 |
+|4|01/30/2025| DNA Sequence Datasets | TBA | Assignment #3 and and Assignment #1 edits |
 |5|02/04/2025| Whole genome Assembly | TBA | Quiz #4 |
 |5|02/06/2025| Transcriptome Sequencing | TBA | Assignment #4 |
 |6|02/11/2025| Genome Annotation | TBA | Quiz #5 |
