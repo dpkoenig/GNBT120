@@ -39,8 +39,10 @@ At Wasabi, click on the left most icon (document icon) to upload (import) a file
 Click on the “-“ icon to zoom out; I recommend zooming so far out that you just see colors, not letters. Scroll through the alignment. You will see that there are some regions that are aligned far better than others.
 
 An example of a poorly aligned region:
+![](/GNBT120/assets/images/Was.bi.bad.png)
 
 An example of a well-aligned region:
+![](/GNBT120/assets/images/Was.bi.good.png)
 
 If you look at the first 1,000bp, you will see that there are some sequences that have gaps in otherwise very well conserved regions. A similar problem exists at the end of the alignment. Probably these are incomplete sequences, so we will plan to trim them. We will trim both of these regions, later in R.
 
