@@ -12,19 +12,21 @@ Just to make sure we are all starting with the same sequences, download my outpu
 
 Download the sequences into your output folder with the code below. Make sure that your working directory is scripts, or, run this from within your assignment_3_template_2 script:
 ```
-download.file(url="https://bis180ldata.s3.amazonaws.com/downloads/Assignment3/selected_viral_seqs.fa",
-              destfile = "../output/selected_viral_seqs_195v2.fa") # use this to put the file in a different directory
+download.file(url="https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/selected_viral_seqs.fa",
+              destfile = "output/selected_viral_seqs_195v2.fa") # use this to put the file in a different directory
 ```
 ## Multiple sequence alignment
 There are many sequence alignment algorithms and programs. Here we will use MAFFT because it is reasonably quick and does a reasonably good job. Obtaining a good alignment is as much of an art as a science. I tried a few settings and found that we had to reduce the gap opening penalty to get a good alignment.
 
 It takes about an hour to align (remember this is a big file, 196 sequences up to 24,000 bases in length). I give the command below, but YOU DO NOT NEED TO RUN THE COMMAND BELOW. IT WILL TAKE AN HOUR. DOWNLOAD MY RESULTS INSTEAD
+
 ```
 #time mafft --maxiterate 100 --thread 3 --reorder --op 0.5 selected_viral_seqs.fa  > mafft_maxiter100_195_op.5.fa
 ```
+
 ```
 download.file(url="https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/mafft_maxiter100_195_op.5.fa",
-              destfile = "../output/mafft_maxiter100_195v2_op.5.fa") # use this to put the file in a different directory
+              destfile = "output/mafft_maxiter100_195v2_op.5.fa") # use this to put the file in a different directory
 ```
 
 ## View alignment
@@ -76,8 +78,8 @@ library(Biostrings)
 Load the alignment using Biostrings, and set up our file names.
 
 ```
-inpath <- "../output/mafft_maxiter100_195v2_op.5.fa"
-outpath <- "../output/mafft_maxiter100_195v2_op.5_trimmed_75pct.fa"
+inpath <- "output/mafft_maxiter100_195v2_op.5.fa"
+outpath <- "output/mafft_maxiter100_195v2_op.5_trimmed_75pct.fa"
 alignment <- readDNAMultipleAlignment(inpath)
 alignment
 ```
@@ -93,6 +95,8 @@ Mask sites that have more than 25% gaps
 ```
 alignment <- maskGaps(alignment, min.fraction=0.25, min.block.width=1)
 maskedratio(alignment) #what proportion got masked? (rows and columns)
+```
+```
 ## [1] 0.0000000 0.5212013
 ```
 Change the alignment into a stringset so that we can more easily manipulate the names
@@ -164,6 +168,16 @@ Where
 
 ## Examine the tree
 Again, there are many tree viewing programs. We will use the web-based viewer [iTOL](https://itol.embl.de/).
+To upload your tree to the internet for viewing, you will first need to transfer the tree to your computer. Using the terminal on your computer use the following command (if this does not work on your computer I will work with you on this). We will use the rync tool which allows you to copy files between the cluster and your computer.
+
+Open your terminal on your computer (not on the cluster), but replace the following
+1. XXXXX with the path to Assignement 3 folder where you tree is on the cluster
+2. YYYYY the path and file name that you want to use for the tree on your computer
+3. ZZZZ your hpcc login name
+
+```
+rsync -avr ZZZZ@cluster.hpcc.ucr.edu:XXXXX/output/mafft_maxiter100_195v2_op.5_trimmed.fasttree.tre YYYYY
+```
 
 Upload the `mafft_maxiter100_195v2_op.5_trimmed.fasttree.tre` file to iTol.
 
@@ -214,7 +228,7 @@ To perform this analysis we need to do a pairwise sequence alignment of the S ge
 
 First, let’s load the unaligned sequences:
 ```
-selected.seqs <- readDNAStringSet("../output/selected_viral_seqs.fa")
+selected.seqs <- readDNAStringSet("output/selected_viral_seqs.fa")
 ```
 
 **Exercise 18:**
