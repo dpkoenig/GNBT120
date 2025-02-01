@@ -456,6 +456,7 @@ In this table, some of the column names should be obvious. Here are some of the 
 * RLR2: likelihood-ratio-based R2 as defined in Sun et al. (2010)
 * LOD: -log10(P) (which isn’t a true LOD score…)
 * propSnpVar: of the total variance in the trait, what proportion is “explained” by this SNP
+
 **Exercise 5:**
 
 1. Sort the significant SNPs to find the most significant ones (smallest pValue).
