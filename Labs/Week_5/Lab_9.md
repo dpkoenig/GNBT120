@@ -186,7 +186,7 @@ m2[sample(1:nrow(m2),3),]
 ### Random number seeds
 Computers generate [psuedo-random](https://en.wikipedia.org/wiki/Random_number_generation) numbers. Sometimes it is useful to have the computer generate the same set of “random” numbers for reproducibility. This is accomplished by setting the random number “seed” which determines the starting point for the random number generator. We will do this below so that we all are working with the same samples.
 
-***Exercise 1***
+**Exercise 1**
 
 Now, create a data subset that contains a random sample of 10000 SNPs from the full data set. Place the smaller data set in an object called `data.geno.10000`. **Very important: you want to keep the first column, the one with the variety IDs, and you want it to be the first column in `data.geno.10000`. AND You do not want it to show up randomly later on in the data set.** Think about how to achieve this. Hint: `[ ]` will help
 
@@ -298,7 +298,7 @@ pcvar <- geno.pca$sdev^2 # square std dev to get variance
 pcvar.pct <- tibble(pctvar=pcvar/sum(pcvar) * 100,
                     PC=1:length(pcvar))
 ```
-*Exercise 2*: plot the variance explained by the first 10 PCs (that is plot the first 10 rows of `pcvar.pct`); it should look something like plot of chunk PC_pct_var So, we have collapsed the majority of the variation in our 36,900 SNPs into 3 PCs!
+**Exercise 2**: plot the variance explained by the first 10 PCs (that is plot the first 10 rows of `pcvar.pct`); it should look something like plot of chunk PC_pct_var So, we have collapsed the majority of the variation in our 36,900 SNPs into 3 PCs!
 
 Let’s pull out the PCs into their own tibble:
 ```
@@ -601,7 +601,7 @@ fs_results_long %>%
   scale_color_brewer(type="div") + scale_fill_brewer(type="div")
 ```
 ## How do these population assignments relate to the PCA plot?
-EXERCISE 6: First, use a join function to combine the PCA data (in object `PCs`) with the population assignments (in `fs_results`) and place the result in `geno.pca.pop` Then re plot the PCA data, but use the population assignment to color the points. Make one plot for PC1 vs PC2 and a second for PC3 vs PC2. How do the populations assignments relate to the PCA plots?
+**Exercise 6**: First, use a join function to combine the PCA data (in object `PCs`) with the population assignments (in `fs_results`) and place the result in `geno.pca.pop` Then re plot the PCA data, but use the population assignment to color the points. Make one plot for PC1 vs PC2 and a second for PC3 vs PC2. How do the populations assignments relate to the PCA plots?
 
 **Hint** convert the `assignedPop` variable to a character type before starting, with:
 ```
