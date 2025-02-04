@@ -1,9 +1,9 @@
 # Rice SNPs
 ## Getting Started
-* I have created a new repository called `Assignment_5` and have placed an `Assignment_5_template_1.Rmd` file there.
+* I have created a new repository called `Assignment_4` file there.
 * Clone the repository into a new Rstudio Project
-* Download the file RiceSNPData.tar.gz, move the file to your input directory, and inflate the tar-ball (see your notes from “Just Enough Unix” if you don’t remember how to do this.) . You may or may not need to create the `input` folder.
-* Open the `Assignment_5_template_1.Rmd` file and use that for your answers
+* Download the file [RiceSNPData.tar.gz](https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/Rice_44K_genotypes.csv.gz), move the file to your input directory, and inflate the tar-ball (see your notes from “Just Enough Unix” if you don’t remember how to do this.) . You may or may not need to create the `input` folder.
+* Open the `Assignment_5.Rmd` file and use that for your answers
 
 ## Preliminaries
 Let’s load the libraries we need:
