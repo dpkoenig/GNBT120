@@ -11,7 +11,7 @@
 |4|01/30/2025| Phylogeny | [Bioinformatics for beginners](https://www.sciencedirect.com/science/article/pii/B9780124104716000098) | Assignment #3 Part 1 and Assignment #1 edits |
 |5|02/04/2025| Plotting in R and Analysis of Polymorphism #1 | Buffalo: p. 207 - 224 (Chapter 8 Exploring Data Visually with ggplot2 1: Scatterplots and Densities to Using ggplot2 Facets); R for data science Chapters 3, 12 | Assignment #3 Part 2 and Quiz #4 |
 |5|02/06/2025| Analysis of Polymorphism #2 | TBA |  |
-|6|02/11/2025| Guest Lecture and Genome-wide Association studies | TBA | Assignment #4 and Quiz #5 |
+|6|02/11/2025| Guest Lecture and Genome-wide Association studies | [Wikipedia GWAS](http://en.wikipedia.org/wiki/Genome-wide_association_study) [GWAS Q & A](http://jnmaloof.github.io/BIS180L_web/docs/Brookfield2010_BMC_Biol.pdf) [GWAS protocol](http://jnmaloof.github.io/BIS180L_web/docs/Al-Chalabi_2009_Cold%20Spring%20Harbor%20protocols.pdf) | Assignment #4 and Quiz #5 |
 |6|02/13/2025| Genome Resequencing | TBA |  |
 |7|02/18/2025| Identification and annotations of genetic variants | TBA | Assignment #5 and Quiz #6 |
 |7|02/20/2025| Genome Assembly  | TBA | NA |
