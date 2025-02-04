@@ -521,7 +521,7 @@ Then load the faststructure module
 
 fastStructure is run from the Linux command line.
 ```
-fastStructure -K 4 --input=rice.data.fastStructure.input --output=rice.fastStructure.out --format=str
+structure.py -K 4 --input=rice.data.fastStructure.input --output=rice.fastStructure.out --format=str
 (this will take about 2 minutes to run)
 ```
 In the above command, `-K 4` specifies the number of ancestral populations that fastStructure should create
