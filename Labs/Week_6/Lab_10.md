@@ -2,7 +2,7 @@
 
 Today we will analyze variation in the phenotypic data. We specifically want to know if various phenotypes vary by region or population, and whether we can identify SNPs that are associated with variation in a trait of interest.
 
-Please clone your Assignment_6 repository to find the Assignment_6_template_1.Rmd file to record your answers.
+Please clone your Assignment_5 repository to find the Assignment_5_template_1.Rmd file to record your answers.
 
 ## Goals
 1. Examine and summarize some of the Rice trait data
@@ -36,7 +36,7 @@ We need to get the population assignments from fastStructure in the same data fr
 
 Load data from last lab
 ```
-load("../../assignment_05-username/output/data_from_SNP_lab.Rdata")
+load("../../assignment_04-username/output/data_from_SNP_lab.Rdata")
 ```
 You will need to change this path to the location of your `data_from_SNP_lab.Rdata` file
 
@@ -177,7 +177,7 @@ Load genotype data. This is the same data you used in the last lab.
 ```
 Sys.setenv(VROOM_CONNECTION_SIZE="500000") # needed because the lines in this file are _extremely_long.
 
-data.geno <- read_csv("../../assignment_05-username/input/Rice_44K_genotypes.csv.gz", ## adjust the path to point to your assignment 5 repo
+data.geno <- read_csv("../../assignment_04-username/input/Rice_44K_genotypes.csv.gz", ## adjust the path to point to your assignment 5 repo
                       na=c("NA","00"))  %>%
   rename(ID=`...1`, `6_17160794` = `6_17160794...22252`) %>%
   select(-`6_17160794...22253`)
