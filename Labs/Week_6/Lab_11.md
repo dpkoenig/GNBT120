@@ -296,4 +296,4 @@ Where the first path give the location of the bowtie index (built before Exercis
 
 **Exercise 6:** using a bash for loop run tophat on all of the fastq files. Show your code here. Make sure that the results are going somewhere in your `output` directory. Also: **IMPORTANT** By default tophat will write to directory “tophat_out”. If you run it multiple times it will overwrite the contents of this directory each time. Therefore **be sure to read the tophat help file so that you can figure out how to have your for loop write to a new directory for each fastq file!**
 
-**IMPORTANT 2** This will probably take about an hour to run. You can leave your instance on but do not need to stay in lab while it runs.
+**IMPORTANT 2** This will probably take about an hour to run. You can stay in lab while it runs, or you can run this at home. If you close your computer then the process will stop.
