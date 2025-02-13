@@ -284,7 +284,7 @@ If we identified serious problems from `multiqc` we would probably want to do 
 
 Now map/align the sequences to the indexed reference. We will use tophat, which in turn calls bowtie2. tophat handles the splice junctions whereas bowtie2 actually maps the fastq sequences to the genome. Note that there are many options that could be specified (See `bowtie2 -h` and `tophat -h`).
 
-**Change directories back to the Assignment_08 directory**
+**Change directories back to the Assignment_06 directory**
 
 A single fastq file could be mapped using:
 
