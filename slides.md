@@ -5,3 +5,4 @@
 4. [Lecture 8](/GNBT120/assets/images/5_Phylogeny.pdf)
 5. [Lecture 9a](/GNBT120/assets/images/PCA_and_MDS.pdf)
 6. [Lecture 9b](/GNBT120/assets/images/Rice_Diversity.pdf)
+7. [Lecture 10](/GNBT120/assets/images/13_IlluminaIntro.html)
