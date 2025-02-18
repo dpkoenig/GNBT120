@@ -10,4 +10,4 @@ Edit the markdown template to answer the questions. The assignment will be turne
 |Genetic Variation|[Assignment_4](https://classroom.github.com/a/nV_G8H1z)|February 6, 1:10 PM|
 |GWAS|[Assignment_5](https://classroom.github.com/a/5vSDZvxc)|February 13, 1:10 PM|
 |Illumina 1|[Assignment_6](https://classroom.github.com/a/GtJCx5Sb)|February 20, 1:10 PM|
-
+|Illumina 2|[Assignment_7](https://classroom.github.com/a/PD2ZBCJ-)|February 25, 1:10 PM|

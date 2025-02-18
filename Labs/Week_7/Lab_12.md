@@ -16,7 +16,7 @@ _OK to cut and paste today’s code_
 
 ## Data files
 
-For better viewing and SNP calling I compiled all of the IMB211 internode files and all of the R500 internode files and ran STAR on those. Then to keep the download to a somewhat reasonable size I subset the bam file to chromosome A03. `cd` into your `Assignment_6/output` directory and download the files as listed below:
+For better viewing and SNP calling I compiled all of the IMB211 internode files and all of the R500 internode files and ran STAR on those. Then to keep the download to a somewhat reasonable size I subset the bam file to chromosome A03. `cd` into your `Assignment_7/output` directory and download the files as listed below:
 
 ```
 wget https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/STAR_out-IMB211_INTERNODE_A03.tar.gz
@@ -100,9 +100,9 @@ samtools index IMB211_INTERNODE_Aligned_A03.bam
 By default IGV starts with the human genome. It has a number of built-in genomes, but does not include _B. rapa_. We must upload it ourselves.
 
 #### load the genome fasta
-**Use rsync to copy Brapa_gene_v1.5.gff and BrapaV1.5_chrom_only.fa onto your computer. These files are from Assignment_5**
+**Use rsync to copy Brapa_gene_v1.5.gff and BrapaV1.5_chrom_only.fa onto your computer. These files are from Assignment_6**
 
-Select `BrapaV1.5_chrom_only.fa` located in input/Brapa_reference of your Assignment 6 repository
+Select `BrapaV1.5_chrom_only.fa` located in input/Brapa_reference of your Assignment 7 repository
 
 In IGV, click on `Genomes > Load Genome from File` (it may take a few seconds for the file select window to open)
 
@@ -110,7 +110,7 @@ In IGV, click on `Genomes > Load Genome from File` (it may take a few seconds 
 
 In IGV, click on `File > Load from File`
 
-Select `Brapa_gene_v1.5.gff` located in input/Brapa_reference of your Assignment 6 repository
+Select `Brapa_gene_v1.5.gff` located in input/Brapa_reference of your Assignment 7 repository
 
 ### Load some tracks
 
@@ -146,7 +146,7 @@ For the remainder of the lab you will again work on the cluster.
 The goal of this section is to find polymorphisms between IMB211 and R500. There are many tools available. We will use [FreeBayes](https://github.com/ekg/freebayes)
 (For more info click on the link above. Once you are on the FreeBayes page, scroll down to the README for more info on FreeBayes)
 
-Make a new directory for this analysis inside the `Assignment_6/output` directory
+Make a new directory for this analysis inside the `Assignment_7/output` directory
 
 ```
 mkdir SNP_analysis
