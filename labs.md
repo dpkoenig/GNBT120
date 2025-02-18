@@ -16,4 +16,5 @@
 |5|5|2/4/2025|[Plotting and Genetic Diversity](https://dpkoenig.github.io/GNBT120/Labs/Week_5/Lab_9)|
 |5|6|2/11/2025|[GWAS](https://dpkoenig.github.io/GNBT120/Labs/Week_6/Lab_10)|
 |5|6|2/12/2025|[Illumina](https://dpkoenig.github.io/GNBT120/Labs/Week_6/Lab_11)|
+|6|7|2/18/2025|[Illumina 2](https://dpkoenig.github.io/GNBT120/Labs/Week_7/Lab_12)|
 

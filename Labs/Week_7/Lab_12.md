@@ -1,7 +1,5 @@
 # Viewing Illumina reads in IGV; finding SNPs
 
-16 May 2024
-
 # Goals
 
 In the last lab period we learned about Illumina reads and fastq files. We performed quality trimming and then mapped those reads to the _B. rapa_ reference genome.
@@ -18,7 +16,7 @@ _OK to cut and paste today’s code_
 
 ## Data files
 
-For better viewing and SNP calling I compiled all of the IMB211 internode files and all of the R500 internode files and ran STAR on those. Then to keep the download to a somewhat reasonable size I subset the bam file to chromosome A03. `cd` into your `Assignment_9/output` directory and download the files as listed below:
+For better viewing and SNP calling I compiled all of the IMB211 internode files and all of the R500 internode files and ran STAR on those. Then to keep the download to a somewhat reasonable size I subset the bam file to chromosome A03. `cd` into your `Assignment_6/output` directory and download the files as listed below:
 
 ```
 wget https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/STAR_out-IMB211_INTERNODE_A03.tar.gz
@@ -40,7 +38,6 @@ You will see several files there. Some of these are listed below
 
 **Exercise 8**: Take a look at the `IMB211_INTERNODE_Log.final.out` file.
 _You only need to answer for the IMB211 alignment_
-**The questions are not going to match the template. Please use these**
 **a**. What percentage of reads map uniquely to the reference?
 **b**. What reasons are given for the reads that don’t map uniquely (list three)
 **c**. One category is “unmapped other”. Think about the process of read mapping and that the reference genome is from a different cultivar (B3) than the cultivar we sequenced (IMB211). Give 2 reasons why reads might not map to the reference.
@@ -52,6 +49,7 @@ Bam files contain the information about where each read maps. They are in a bina
 Let’s take a look at `IMB211_INTERNODE_Aligned_A03.bam`. For this we use the `samtools view` command
 
 ```
+module load samtools
 samtools view -h IMB211_INTERNODE_Aligned_A03.bam | less
 ```
 
@@ -83,7 +81,9 @@ And more
 
 ## Look at a bam file with IGV
 
-While `samtools view` is nice, it would be nicer to actually see our reads in context. We can do this with [IGV, the Integrative Genome Viewer](https://www.broadinstitute.org/igv/)
+While `samtools view` is nice, it would be nicer to actually see our reads in context. We can do this with [IGV, the Integrative Genome Viewer](https://www.broadinstitute.org/igv/).
+
+**You will have to do this part of the lab on your own computer. Download igv onto your own computer and make sure you can get it to run**
 
 To use IGV, first create an index of the bam file
 
@@ -93,23 +93,24 @@ samtools index IMB211_INTERNODE_Aligned_A03.bam
 
 **Do the above step for both the IMB211 and the R500 files**
 
-Then to start IGV, type `igv` at the Linux command line.
-
 ### Prepare the genome reference files for IGV to use
+
+**Use rsync to copy the bam files and there indexes onto your computer.**
 
 By default IGV starts with the human genome. It has a number of built-in genomes, but does not include _B. rapa_. We must upload it ourselves.
 
 #### load the genome fasta
+**Use rsync to copy Brapa_gene_v1.5.gff and BrapaV1.5_chrom_only.fa onto your computer. These files are from Assignment_5**
+
+Select `BrapaV1.5_chrom_only.fa` located in input/Brapa_reference of your Assignment 6 repository
 
 In IGV, click on `Genomes > Load Genome from File` (it may take a few seconds for the file select window to open)
-
-Select `BrapaV1.5_chrom_only.fa` located in input/Brapa_reference of your Assignment 9 repository
 
 #### load the gff
 
 In IGV, click on `File > Load from File`
 
-Select `Brapa_gene_v1.5.gff` located in input/Brapa_reference of your Assignment 9 repository
+Select `Brapa_gene_v1.5.gff` located in input/Brapa_reference of your Assignment 6 repository
 
 ### Load some tracks
 
@@ -119,7 +120,7 @@ Click on `File > Load From File` ; then select the `IMB211_INTERNODE_Aligned_
 
 ### Take a look
 
-Click on the “ALL” pull-down menu and select chromosome A03. Then zoom in until you can see the reads. _If are having trouble with your cursor and the pulldown menu, try resizing your VNC window while IGV is open_
+Click on the “ALL” pull-down menu and select chromosome A03. Then zoom in until you can see the reads.
 
 - Grey vertical bars are a histogram of coverage
 - Grey horizontal bars represent reads.
@@ -140,11 +141,12 @@ Can you distinguish likely SNPs from sequencing/alignment errors? How?
 **Exercise 11**: Comment on the trust-worthiness of computational annotation. (To be fair, this annotation was done in 2009 or 2010; tools may have gotten better since then).
 
 ## Calling SNPs
+For the remainder of the lab you will again work on the cluster.
 
 The goal of this section is to find polymorphisms between IMB211 and R500. There are many tools available. We will use [FreeBayes](https://github.com/ekg/freebayes)
 (For more info click on the link above. Once you are on the FreeBayes page, scroll down to the README for more info on FreeBayes)
 
-Make a new directory for this analysis inside the `Assignment_9/output` directory
+Make a new directory for this analysis inside the `Assignment_6/output` directory
 
 ```
 mkdir SNP_analysis
@@ -171,6 +173,8 @@ Now we use `freebayes` to look for SNPs. `freebayes` calculates the number o
 We first call `samtools addreplacerg` to add Read Groups to our bam files, enabling us to call SNPs separately for the two genotypes. The output from `samtools addreplacerg` is a bam file with the Read Groups, we will then merge the two bam files, index the merged file and use it as input for `freebayes`.
 
 ```
+module load freebayes
+
 samtools addreplacerg -o rg_IMB211_rmdup.bam -r "ID:IMB211" -r "SM:IMB211" IMB211_rmdup.bam
 
 samtools addreplacerg -o rg_R500_rmdup.bam -r "ID:R500" -r "SM:R500" R500_rmdup.bam
@@ -182,7 +186,7 @@ samtools index combined_IMB211_R500.bam
 freebayes --fasta-reference ../../input/Brapa_reference/BrapaV1.5_chrom_only.fa combined_IMB211_R500.bam  > IMB211_R500.vcf
 ```
 
-freebayes will take ~ 3 minutes to run. If you would prefer not to wait, you can go ahead to the [second part of today’s lab](https://jnmaloof.github.io/BIS180L_web/2024/05/16/R-SNPs) where you can download my copy of the VCF file.
+freebayes will take ~ 3 minutes to run.
 
 ## Two other popular SNP callers:
 
