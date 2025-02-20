@@ -11,3 +11,4 @@ Edit the markdown template to answer the questions. The assignment will be turne
 |GWAS|[Assignment_5](https://classroom.github.com/a/5vSDZvxc)|February 13, 1:10 PM|
 |Illumina 1|[Assignment_6](https://classroom.github.com/a/GtJCx5Sb)|February 20, 1:10 PM|
 |Illumina 2|[Assignment_7](https://classroom.github.com/a/PD2ZBCJ-)|February 25, 1:10 PM|
+|VCF|[Assignment_8](https://classroom.github.com/a/oR9bJdFF)|February 30, 1:10 PM|
