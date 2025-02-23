@@ -4,11 +4,8 @@ In the first part of today’s lab you used `FreeBayes` to calculate SNPs betw
 
 The .vcf file contains information on polymorphisms. It is a tab-delimited file that is easily imported into R. We want to filter the SNPs to remove low quality SNPs. We also could use this for downstream analyses, i.e. use these as genetic markers for mapping or QTL mapping, look for genes with coding changes, etc., although we will not have time to explore those types of analyses in this class.
 
-If you need to download the file you can do so [here](https://bis180ldata.s3.amazonaws.com/downloads/Illumina_Assignment/IMB211_R500.vcf.gz). Place it in your `output/SNP_analysis/` directory.
+If you need to download the file you can do so [here](https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/IMB211_R500.vcf.gz). Place it in your `output/SNP_analysis/` directory.
 
-## Can work on your laptop
-
-If you have Rstudio on your laptop with tidyverse installed you can work there instead of the instance if you prefer. Just remember to push any work you have on Jetstream up to github and the clone the repo to your Laptop.
 
 ## Import VCF file and reformat
 
