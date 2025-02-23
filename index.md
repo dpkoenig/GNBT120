@@ -10,3 +10,6 @@
 4. [Assignments](https://dpkoenig.github.io/GNBT120/assignments)
 
 5. [Slides](https://dpkoenig.github.io/GNBT120/slides)
+
+6. [Project](https://dpkoenig.github.io/GNBT120/project)
+

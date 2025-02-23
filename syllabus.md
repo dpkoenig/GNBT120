@@ -11,6 +11,7 @@ dkoenig@ucr.edu
 
 ## Office Hours
 By Appointment
+Genomics 3119A
 
 ## Intent
 At the turn of the century, just 25 years ago, biological experiments were extremely labor intensive and produced small amounts of data. Today, technological developments have made it common for a single biological experiment to generate millions of data points.  Computational methods are essential to analyze and interpret these massive datasets. In this course, you will learn the basic skills necessary to conduct biological research using computers.
