@@ -18,3 +18,4 @@
 |6|6|2/12/2025|[Illumina](https://dpkoenig.github.io/GNBT120/Labs/Week_6/Lab_11)|
 |7|7|2/18/2025|[Illumina 2](https://dpkoenig.github.io/GNBT120/Labs/Week_7/Lab_12)|
 |8|7|2/18/2025|[VCF](https://dpkoenig.github.io/GNBT120/Labs/Week_7/Lab_13)|
+|9|8|2/25/2025|[Differential gene expression](https://dpkoenig.github.io/GNBT120/Labs/Week_8/Lab_14)|
