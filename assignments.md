@@ -12,4 +12,4 @@ Edit the markdown template to answer the questions. The assignment will be turne
 |Illumina 1|[Assignment_6](https://classroom.github.com/a/GtJCx5Sb)|February 20, 1:10 PM|
 |Illumina 2|[Assignment_7](https://classroom.github.com/a/PD2ZBCJ-)|February 25, 1:10 PM|
 |VCF|[Assignment_8](https://classroom.github.com/a/oR9bJdFF)|February 30, 1:10 PM|
-|RNAseq|[Assignment_9](https://classroom.github.com/a/rOHPkcOH)|March 6th, 1:10 PM|
+|RNAseq|[Assignment_9](https://classroom.github.com/a/rOHPkcOH)|NOT GRADED, JUST FOR YOUR OWN USE|
