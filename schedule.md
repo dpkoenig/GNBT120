@@ -16,9 +16,9 @@
 |7|02/18/2025| Identification of genetic variants | Buffalo p. 355 - 377 (Start of Chapter 11 to Pileups with samtools pileup) | Assignment #5 |
 |7|02/20/2025| VCF files and variant analysis | TBA | Quiz #6 and project dataset posted |
 |8|02/25/2025| Differential gene expression analysis | None | Assignment #6 |
-|8|02/27/2025| Differential gene expression analysis | None | Quiz #7 |
+|8|02/27/2025| Differential gene expression analysis | None | |
 |9|02/28/2025| Work on project and assignment revisions | None | Assignment #7 |
-|9|03/30/2025| Work on project and assignment revisions | None |  |
+|9|03/30/2025| Work on project and assignment revisions | None | Assignment #8 |
 |10|03/04/2025| Project wrap up slide review | | |
 |10|03/06/2025| Project Presentations | | |
-|Finals Week| | | Project write up due date |
+|Finals Week| | | Project write 3/21/2025 |
