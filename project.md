@@ -6,7 +6,7 @@ Cowpea is one of the most heat and drought tolerant crop species, and it is impo
 ## Useful links
 1) [Cowpea Genome Browser](https://phytozome-next.jgi.doe.gov/jbrowse/index.html?data=genomes%2FVunguiculata_v1_2&loc=Vu06%3A12197251..12240950&tracks=Transcripts%2CAlt_Transcripts%2CPASA_assembly%2CBlatx_Fabidae%2CBlastx_protein&highlight=)
 2) [BIOCLIM Variable definitions](https://www.worldclim.org/data/bioclim.html#google_vignette)
-
+3) [Github repository for your project](https://classroom.github.com/a/wWtsAtY9)
 
 ## Analysis
 1) An analysis of population structure in the dataset
