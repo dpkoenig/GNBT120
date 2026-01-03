@@ -11,5 +11,5 @@
 
 5. [Slides](https://dpkoenig.github.io/GNBT120/slides)
 
-6. [Project](https://dpkoenig.github.io/GNBT120/project)
+6. [Project]()
 
