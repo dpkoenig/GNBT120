@@ -3,8 +3,8 @@
 | ------------- | ------------  | ---------------------------------  | -------------  | -------------  |
 |1|01/06/2026| Course intro, connect to HPCC, Markdown intro | Bioinformatics Skills pp. 1-60 | |
 |1|01/08/2026| Introduction to the Linux/Unix environment | Bioinformatics Skills pp. 67-97, 125-169 | Quiz #1 |
-|2|01/13/2026| Loops and BLAST | Chapter 6 of Bioinformatics for Beginners | Assignment #1 |
-|2|01/15/2026| BLAST (cont.) | TBA | Quiz #2 |
+|2|01/13/2026| Loops and BLAST | Chapter 6 of Bioinformatics for Beginners | |
+|2|01/15/2026| BLAST (cont.) | TBA | Quiz #2 & Assignment #1 |
 |3|01/20/2026| Catch up day | NA ||
 |3|01/22/2026| Intro to R and RStudio | [R for data science](https://r4ds.had.co.nz/) Chapters 4, 5, 6, 10, 18, 27; Buffalo Chapter 8.| Assignment #2 |
 |4|01/27/2026| Intro to R and RStudio continued | TBA | Quiz #3 |

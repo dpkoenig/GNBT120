@@ -10,7 +10,7 @@ dkoenig@ucr.edu
 12:00-3:50 PM Tues/Thurs, Batchelor 1104
 
 ## Office Hours
-By Appointment
+Friday 10:00-12:00 PM
 Genomics 3119A
 
 ## Intent
@@ -26,7 +26,7 @@ At the turn of the century, just 25 years ago, biological experiments were extre
 * Manage a reproducible computational project using GitHub
 * Conduct analysis of biological datasets and visualization of results using the statistical computing software R and the RStudio interface
 
-### In addition to developing basic computational skills, you will conduct biological research that will most of the following:
+### In addition to developing basic computational skills, you will conduct biological research that may include the following:
 * Assemble a new genome
 * Identify the sequences within the genome with particular biological function
 * Align sequences to a genome and identify genetic differences between individuals
@@ -34,8 +34,17 @@ At the turn of the century, just 25 years ago, biological experiments were extre
 * Link genomic differences to changes in phenotype using genome-wide association studies
 * Identify changes in gene expression between samples using transcriptomic datasets
 
-## On Plagiarism
-You will often work with a lab partner as you do the lab exercises. However you must each write your own answers for worksheets and lab reports. In addition, while the web is a powerful resource for information it is plagiarism and a SJA violation to cut and paste information directly from web sources without indicating that you are quoting and providing a citation.
+## How to get help
+* In person discussion in laboratory (8 hours per week I will be there and please ask questions. I want you to succeed!)
+* [Email](dkoenig@ucr.edu)
+* Come to office hours
+
+## Saftey Measures
+* This is a lab, but it is entirely computational so no special saftey measures are required
+
+## Academic Integrity
+As is true for all of your courses, plagiarism and cheating will not be allowed on any of your assignments or assessments. If you are unsure if something constitutes a breach of academic integrity, do not hesitate to contact me. Please also be sure to familiarize yourself with [UCR’s Academic Integrity Policies and Procedures](https://conduct.ucr.edu/policies/academic-integrity-policies-and-procedures). 
+You will often work with others as you do the lab exercises. However you must each write your own answers for worksheets and lab reports. In addition, while the web is a powerful resource for information it is plagiarism and a SJA violation to cut and paste information directly from web sources without indicating that you are quoting and providing a citation.
 
 ## Required Course Materials
 There are two main text books for this course. The first is **Bioinformatics Data Skills** by Vince Buffalo. You should have access to this text via the University of California site license for O'Reilly books [here](https://learning.oreilly.com/home/). Log-in using your campus credentials and you should have access at least while on campus, but you may need to setup a campus VPN through the library to get access off campus. You can find cheap used versions of this text online as well.
@@ -65,9 +74,9 @@ For technology support, contact Bearhelp@ucr.edu.
 Grades will be assigned according to the following scheme. For lecture exams where the median grade of the class falls below 75, a curve will be applied to adjust all scores to this median.
 
 Your grade will be calulated from the following:
-* Lab exercises  45%
+* Lab exercises  40%
 * Quizzes 10%
-* Participation 5%
+* Participation 10%
 * Lab Project 40%
 
 |Grade|Range|
@@ -141,3 +150,12 @@ It is illegal to download, upload, reproduce, or distribute any copyrighted mate
 ### Registration and Withdrawal
 If you choose to withdraw from this course, you must complete the appropriate University form and turn the form in before the deadline. Deadlines are shown in the Academic Calendar, which is available from the Office of the Registrar.
 
+## Campus student services
+### Academic support (General, not all apply specifically to this course)
+* [Writing Support Program](https://arc.ucr.edu/writing)
+* [Assistance, Coaching & Encouragement](https://arc.ucr.edu/ace)
+* ITS Student Technology Services Computer labs. If need a machine for an assignment, assistance with your R'Mail or iLearn accounts, getting on the network, or any other services used by UCR students, contact [here](Bearhelp@ucr.edu). 
+* Disability support: If you require accommodations, please be sure to apply through the [Student Disability Resource Center](https://sdrc.ucr.edu/current-ucr-students) as soon as possible, as there may be some wait time.
+* Adjustments for Pregnancy/Childbirth Related Issues: Should you need modifications or adjustments to your course requirements because of documented pregnancy-related or childbirth-related issues, please contact me as soon as possible to discuss your options. Generally, modifications will be made where medically necessary and similar in scope to accommodations based on temporary disability. Learn more about the rights of pregnant and parenting students by consulting the [Office of Diversity, Equity, and Inclusion](https://diversity.ucr.edu/). 
+* Title IX Resources: For any concerns regarding gender-based discrimination, sexual harassment, sexual misconduct, stalking, or intimate partner violence, the University offers a variety of resources, including advocates on-call 24/7, counseling services, mutual no contact orders, scheduling adjustments, and disciplinary sanctions against the perpetrator. Please see the Title IX website for more information. They can be reached at (951)827-7070. [You can also file a report](https://titleix.ucr.edu/reporting).
+* Student Needs: [Student Health Services](https://studenthealth.ucr.edu/) and [Counseling & Psychological Services](https://studenthealth.ucr.edu/)
