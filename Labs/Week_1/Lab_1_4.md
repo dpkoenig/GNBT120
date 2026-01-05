@@ -7,7 +7,7 @@ This document was authored by Ian Korf with modifications by Julin Maloof, John 
 ## Preparation
 
 ### Open Rstudio
-Open Rstudio on the cluster [here](https://rstudio.hpcc.ucr.edu). Use your HPCC credentials to log on. Make sure that the project is set to Assignment 01 (upper right corner).
+Open Rstudio session on OnDemand. Use your HPCC credentials to log on. **Make sure that the project is set to Assignment 01 (upper right corner)**.
 
 ### What to turn in
 You will be required to turn in two documents in markdown format and then to render these to two html documents. You can find blank templates for both of these in your Assignment 01 repository:
@@ -17,18 +17,12 @@ You will be required to turn in two documents in markdown format and then to ren
 From the Rstudio file browser, click to open these in Rstudio and edit them there. When you are ready, click the `Preview` button and that will create the .html files. Remember to add the html files to your repo.
 
 ## Terminal, Command Line, and Shell
-Your interface to Unix will be through a shell program using the command line interface within a terminal application. There are several types of shells and terminals, but the details of these are mostly unnecessary for us. You should know that we are using the [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) shell. Launch your terminal application that you installed in [Lab_1_1]().
+Your interface to Unix will be through a shell program using the command line interface within a terminal application. There are several types of shells and terminals, but the details of these are mostly unnecessary for us. You should know that we are using the [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) shell. Launch your terminal application from the OnDemand virtual HPCC desktop.
 
 The command line is where you type instructions for what you want the computer to do. Some of these statements are “do this now” while others are “let’s get ready to do this.” It may seem silly in this high-tech age to type your commands when you could simply point and click or maybe even use voice activation or gesturing. However, it is much easier to automate analyses through written command. So when it comes time to work with thousands of files, it will be much easier through a command line interface.
 
 ### Terminal Basics
-Launch the terminal application (the name of this will differ from one operating system to another and even within a particular OS you will have several options).
-
-Log in to the hpcc cluster:
-
-```
-ssh -X NETID@cluster.hpcc.ucr.edu
-```
+Launch the terminal application.
 
 Run the `date` command by typing in the terminal and ending with the **return** key.
 

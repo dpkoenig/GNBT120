@@ -18,9 +18,13 @@ You can either generate a ssh key pair at the command line or in Rstudio. For th
 ## Open Rstudio on the HPCC
 You will conduct a good portion of your analysis using an RStudio instance using UCR's High-Preformance Computing Center (HPCC). You can find a lot of additional information about the HPCC [here](https://hpcc.ucr.edu). We will discuss the HPCC a lot more later in the course so don't worry to much about the details at this point. 
 
-1. Begin by connecting to [RStudio](https://rstudio.hpcc.ucr.edu) on the HPCC. Log-in with your HPCC credentials.
-![](/GNBT120/assets/images/Screenshot1.png)
-3. Choose `Tools` > Global options from the pull-down menu.
+1. Navigate to [OnDemand](ondemand.hpcc.ucr.edu)
+2. Click the `Interactive Apps` pull down and select `Rstudio Server`.
+![](/GNBT120/assets/images/Lab_1_1_1.png)
+3. Sign in with your credentials.
+4. Click the `Launch` button.
+5. Wait until the Rstudio Server shows `Running`, then click `Connect to RStudio Server`
+6. Choose `Tools` > Global options from the pull-down menu.
 4. From the options box, click on `Git/Svn` on the left hand tab side
 ![](/GNBT120/assets/images/Screenshot2.png)
 5. Click `Create SSH Key`.
@@ -43,11 +47,7 @@ You will conduct a good portion of your analysis using an RStudio instance using
 7. Enter a name for your key, paste in your public key, then press `add SSH key`
 ![](/GNBT120/assets/images/Screenshot8.png)
 ## Test the connection
-Open a linux terminal connect to the server subbing your login for NETID:
-```
-ssh -X NETID@cluster.hpcc.ucr.edu
-```
-Complete sign in and then test the key:
+In your virtual desktop session, open a  terminal and then test the key:
 ```
 ssh -T git@github.com
 ```

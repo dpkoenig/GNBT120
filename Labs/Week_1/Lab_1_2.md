@@ -24,7 +24,7 @@ Rstudio allows you to work in projects to help you keep your files organized. Fu
 
 ## Clone your Assignment repo to the HPCC using Rstudio
 The next step is to clone it to your instance using Rstudio.
-1. Open a new browser window and then navigate to [Rstudio on the HPCC](https://rstudio.hpcc.ucr.edu) and log in as described in `Lab_1_1`.
+1. Connect to an Rstudio session using OnDemand.
 2. Click on `Project` on the upper right-hand side and then `New Project`
 ![](/GNBT120/assets/images/Lab_1_2_2.png)
 3. Next click on `Version Control`
