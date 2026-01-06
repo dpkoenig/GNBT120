@@ -7,7 +7,7 @@ Daniel Koenig
 dkoenig@ucr.edu
 
 ## Time, location
-12:00-3:50 PM Tues/Thurs, Batchelor 1104
+12:00-3:50 PM Tues/Thurs, Campbell Hall 104
 
 ## Office Hours
 Friday 10:00-12:00 PM
