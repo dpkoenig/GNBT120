@@ -90,7 +90,7 @@ Although Rstudio is designed for R, we can also use it to edit simple markdown f
 
 We will give you a proper introduction to Rstudio in a couple of weeks. For markdown files, do the following.
 
-* Open [Rstudio on the HPCC](https://rstudio.hpcc.ucr.edu)
+* Open [Rstudio on the HPCC](http://ondemand.hpcc.ucr.edu)
 * In the lower-right pane, double click `bigdata` then click on +Folder and then create a new folder “Assignment_test” New Folder
 * Click on the the Assignment_test folder that you just created so that the Rstudio file browser is now in that folder.
 * Cick on + Blank File and then select text file. New File
