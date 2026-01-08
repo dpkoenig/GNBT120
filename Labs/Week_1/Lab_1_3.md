@@ -45,7 +45,7 @@ Note that even if the spacing in your table is uneven (pipes don’t line up) th
 For more details, see [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables). For a tool to help you generate a table without all of that finicking typing, see [here](https://www.tablesgenerator.com/markdown_tables)
 
 ### Extra #2: syntax highlighting
-As you know from the tutorial, if you want to show a block of code, then you should “fence” it with three backticks ```
+As you know from the tutorial, if you want to show a block of code, then you should “fence” it with three backticks \`\`\`
 
 like this:
 
