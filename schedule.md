@@ -1,12 +1,12 @@
 # Schedule
 | Week | Date | Topic | Reading  | Assignments/Quizes |
 | ------------- | ------------  | ---------------------------------  | -------------  | -------------  |
-|1|01/06/2026| Course intro, connect to HPCC, Markdown intro | Bioinformatics Skills pp. 1-60 | |
-|1|01/08/2026| Introduction to the Linux/Unix environment | Bioinformatics Skills pp. 67-97, 125-169 | Quiz #1 |
+|1|01/06/2026| Course intro, connect to HPCC, Markdown intro | Bioinformatics Data Skills Part 1.1 - Part 2.4 Quick Authentication with ssh keys | |
+|1|01/08/2026| Introduction to the Linux/Unix environment | Bioinformatics Data Skills Part 2.5 Git for Scientists through "forking and pull requests", Part 3.7 | Quiz #1 |
 |2|01/13/2026| Loops and BLAST | Chapter 6 of Bioinformatics for Beginners | |
 |2|01/15/2026| BLAST (cont.) | TBA | Quiz #2 & Assignment #1 |
 |3|01/20/2026| Catch up day | NA ||
-|3|01/22/2026| Intro to R and RStudio | [R for data science](https://r4ds.had.co.nz/) Chapters 4, 5, 6, 10, 18, 27; Buffalo Chapter 8.| Assignment #2 |
+|3|01/22/2026| Intro to R and RStudio | [R for data science](https://r4ds.had.co.nz/) Chapters 4, 5, 6, 10, 18, 27; Bioinformatics Data Skills, Part 3.8.| Assignment #2 |
 |4|01/27/2026| Intro to R and RStudio continued | TBA | Quiz #3 |
 |4|01/29/2026| Phylogeny | [Bioinformatics for beginners](https://www.sciencedirect.com/science/article/pii/B9780124104716000098) | Assignment #3 Part 1 and Assignment #1 edits |
 |5|02/03/2026| Plotting in R and Analysis of Polymorphism #1 | Buffalo: p. 207 - 224 (Chapter 8 Exploring Data Visually with ggplot2 1: Scatterplots and Densities to Using ggplot2 Facets); R for data science Chapters 3, 12 | Assignment #3 Part 2 and Quiz #4 |
