@@ -126,7 +126,7 @@ Another useful command is `du -h` (disk usage) which shows how much space each o
 
 #### Exercise Three
 
-The HPCC has many file systems. One is located at `/dev/nvme0n1`. Using what you know about Unix commands and the `df` function, print out how much free space your is availiable on this file system in a human-readable format.
+The HPCC has many file systems. One is located at `/dev/mmpmem0`. Using what you know about Unix commands and the `df` function, print out how much free space your is availiable on this file system in a human-readable format.
 
 *End of exercise three*
 
