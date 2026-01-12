@@ -29,13 +29,8 @@ A common way to organize projects is to create the following three directories:
 These should have been created when you cloned your repository.
 
 ## Connect to the cluster and learn how to create an interactive job
-1. Connect to the server as you learned [here](https://dpkoenig.github.io/GNBT120/Labs/Week_1/Lab_1_Preliminaries)
-2. Start an interactive job on the cluster to conduct your analysis. I will discuss this further in a future class but for now use the following to connect. You can find more information about initiating jobs on the cluster [here](https://hpcc.ucr.edu/manuals/hpc_cluster/jobs/). Enter the following to generate an interactive job.
-
-```
-srun --mem=1gb --cpus-per-task 4 --ntasks 1 --time 5:00:00 --pty bash -l
-```
-3. You will need to use the blast software to conduct the following lab. BLAST is installed on the cluster, but you need to load it to use it. The cluster has a software management system where specific software can be loaded using `module`. you can see all the software that can be loaded by entering the command `module avail`. Enter the following to load blast.
+1. Connect to the server as you learned. **START A JOB WITH 4 CORES** [here](https://dpkoenig.github.io/GNBT120/Labs/Week_1/Lab_1_Preliminaries)
+2. You will need to use the blast software to conduct the following lab. BLAST is installed on the cluster, but you need to load it to use it. The cluster has a software management system where specific software can be loaded using `module`. you can see all the software that can be loaded by entering the command `module avail`. Enter the following to load blast.
 ```
 module load ncbi-blast/2.16.0+
 ```
