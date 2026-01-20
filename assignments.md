@@ -4,8 +4,8 @@ Edit the markdown template to answer the questions. The assignment will be turne
 
 |Title|Where|Date Due|
 |:--:|:--:|:--:|
-|Just Enough Unix | [Assignment_1](https://classroom.github.com/a/nHVZxLIC) | January 15, 1:10 PM|
-|Blast and For Loops|[Assignment_2](https://classroom.github.com/a/lZRB1SQ6)| January 22, 1:10 PM|
+|Just Enough Unix | [Assignment_1]() | January 15, 1:10 PM|
+|Blast and For Loops|[Assignment_2]()| January 22, 1:10 PM|
 |Rstudio|[Assignment_3]()|January 29, 1:10 PM|
 |Genetic Variation|[Assignment_4]()|February 5, 1:10 PM|
 |GWAS|[Assignment_5]()|February 12, 1:10 PM|
