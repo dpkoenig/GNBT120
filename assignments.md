@@ -6,7 +6,7 @@ Edit the markdown template to answer the questions. The assignment will be turne
 |:--:|:--:|:--:|
 |Just Enough Unix | [Assignment_1]() | January 15, 1:10 PM|
 |Blast and For Loops|[Assignment_2]()| January 22, 1:10 PM|
-|Rstudio|[Assignment_3]()|January 29, 1:10 PM|
+|Rstudio|[Assignment_3](https://classroom.github.com/a/zX2SqpLh)|January 29, 1:10 PM|
 |Genetic Variation|[Assignment_4]()|February 5, 1:10 PM|
 |GWAS|[Assignment_5]()|February 12, 1:10 PM|
 |Illumina 1|[Assignment_6]()|February 19, 1:10 PM|
