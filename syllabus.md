@@ -1,25 +1,159 @@
-# Schedule
-| Week | Date | Topic | Reading  | Assignments/Quizes |
-| ------------- | ------------  | ---------------------------------  | -------------  | -------------  |
-|1|01/06/2026| Course intro, connect to HPCC, Markdown intro | Bioinformatics Data Skills Part 1.1 - Part 2.4 Quick Authentication with ssh keys | |
-|1|01/08/2026| Introduction to the Linux/Unix environment | Bioinformatics Data Skills Part 2.5 Git for Scientists through "forking and pull requests", Part 3.7 | Quiz #1 |
-|2|01/13/2026| Loops and BLAST | Chapter 6 of Bioinformatics for Beginners | |
-|2|01/15/2026| BLAST (cont.) | NA | Quiz #2 & Assignment #1 |
-|3|01/20/2026| Catch up day | NA ||
-|3|01/22/2026| Intro to R and RStudio | [R for data science](https://r4ds.had.co.nz/) Chapters 4, 5, 6, 10, 18, 27; Bioinformatics Data Skills, Part 3.8.| Assignment #2 |
-|4|01/27/2026| Intro to R and RStudio continued | NA | Quiz #3 and Assignment #1 edits |
-|4|01/29/2026| Catch up day|||
-|5|02/03/2026| Phylogeny | [Bioinformatics for beginners](https://www.sciencedirect.com/science/article/pii/B9780124104716000098) | Assignment #3 Part 1  |
-|5|02/05/2026| Plotting in R and Analysis of Polymorphism #1 | Buffalo: p. 207 - 224 (Chapter 8 Exploring Data Visually with ggplot2 1: Scatterplots and Densities to Using ggplot2 Facets); R for data science Chapters 3, 12 | Assignment #3 Part 2 and Quiz #4 |
-|6|02/10/2026| Analysis of Polymorphism #2 | TBA |  |
-|6|02/12/2026| Guest Lecture and Genome-wide Association studies | [Wikipedia GWAS](http://en.wikipedia.org/wiki/Genome-wide_association_study) [GWAS Q & A](http://jnmaloof.github.io/BIS180L_web/docs/Brookfield2010_BMC_Biol.pdf) [GWAS protocol](http://jnmaloof.github.io/BIS180L_web/docs/Al-Chalabi_2009_Cold%20Spring%20Harbor%20protocols.pdf) | Assignment #4 |
-|7|02/17/2026| Genome Resequencing | Buffalo: p. 339 - 351 (Start of Chapter 10 to Indexed FASTA Files) | Quiz #5 |
-|7|02/19/2026| Identification of genetic variants | Buffalo p. 355 - 377 (Start of Chapter 11 to Pileups with samtools pileup) | Assignment #5 |
-|8|02/24/2026| VCF files and variant analysis | TBA | Quiz #6 and project dataset posted |
-|8|02/26/2026| Differential gene expression analysis | None | Assignment #6 |
-|9|03/03/2026| Work on project and assignment revisions | None | Assignment #7 |
-|9|03/05/2026| Work on project and assignment revisions | None | Assignment #8 |
-|10|03/10/2026| Project wrap up slide review | | |
-|10|03/12/2026| Project Presentations | | |
-|Finals Week| | | Project write 3/17/2026 |
+## Instructor
+Daniel Koenig
 
+## Email
+dkoenig@ucr.edu
+
+## Time, location
+12:00-3:50 PM Tues/Thurs, Campbell Hall 104
+
+## Office Hours
+Friday 10:00-12:00 PM
+Genomics 3119A
+
+## Intent
+At the turn of the century, just 25 years ago, biological experiments were extremely labor intensive and produced small amounts of data. Today, technological developments have made it common for a single biological experiment to generate millions of data points.  Computational methods are essential to analyze and interpret these massive datasets. In this course, you will learn the basic skills necessary to conduct biological research using computers.
+
+## Objectives
+
+### After completing this course you will be able to:
+* Connect to a high performance compute cluster
+* Use basic command line skills to navigate directories, create and manipulate files, and to execute programs
+* Iterate processes using for loops
+* Keep a computational laboratory notebook using Markdown
+* Manage a reproducible computational project using GitHub
+* Conduct analysis of biological datasets and visualization of results using the statistical computing software R and the RStudio interface
+
+### In addition to developing basic computational skills, you will conduct biological research that may include the following:
+* Assemble a new genome
+* Identify the sequences within the genome with particular biological function
+* Align sequences to a genome and identify genetic differences between individuals
+* Align entire genomes to one another and identify large scale changes
+* Link genomic differences to changes in phenotype using genome-wide association studies
+* Identify changes in gene expression between samples using transcriptomic datasets
+
+## How to get help
+* In person discussion in laboratory (8 hours per week I will be there and please ask questions. I want you to succeed!)
+* [Email](dkoenig@ucr.edu)
+* Come to office hours
+
+## Saftey Measures
+* This is a lab, but it is entirely computational so no special saftey measures are required
+
+## Academic Integrity
+As is true for all of your courses, plagiarism and cheating will not be allowed on any of your assignments or assessments. If you are unsure if something constitutes a breach of academic integrity, do not hesitate to contact me. Please also be sure to familiarize yourself with [UCR’s Academic Integrity Policies and Procedures](https://conduct.ucr.edu/policies/academic-integrity-policies-and-procedures). 
+You will often work with others as you do the lab exercises. However you must each write your own answers for worksheets and lab reports. In addition, while the web is a powerful resource for information it is plagiarism and a SJA violation to cut and paste information directly from web sources without indicating that you are quoting and providing a citation.
+
+## Required Course Materials
+There are two main text books for this course. The first is **Bioinformatics Data Skills** by Vince Buffalo. You should have access to this text via the University of California site license for O'Reilly books [here](https://learning.oreilly.com/home/). Log-in using your campus credentials and you should have access at least while on campus, but you may need to setup a campus VPN through the library to get access off campus. You can find cheap used versions of this text online as well.
+The second text that we may also use as a reference is Hadley Wickham and Garrett Grolemund's R for Science which you can find [here](https://r4ds.had.co.nz).
+
+### Technology Requirements
+Because this course is a computational lab, you will need the following:
+
+#### Hardware
+Access to a current Mac or PC laptop.
+
+#### Software
+Up to data versions of either Windows or OS.
+
+#### Internet Connection
+You will need a reliable internet connection. Test your internet speed using speedtest.net Links to an external site.. Recommended internet speeds:
+
+Ping response is less than 100ms
+Download speed is at least 10Mbps
+Upload speed is at least 2Mbps
+
+**If you do not have or cannot acquire these items, you can apply to the Loan2Learn program to get a loaner device. Please contact either myself or the teaching assistant of any difficulty or delay in acquiring these devices.**
+
+For technology support, contact Bearhelp@ucr.edu.
+
+## Grading
+Grades will be assigned according to the following scheme. For lecture exams where the median grade of the class falls below 75, a curve will be applied to adjust all scores to this median.
+
+Your grade will be calulated from the following:
+* Lab exercises  40%
+* Quizzes 10%
+* Participation 10%
+* Lab Project 40%
+
+|Grade|Range|
+|-----|-----|
+|A|>92.5|
+|A-|90 - 92.5|
+|B+|87.5 - 90|
+|B|82.5 - 87.5|
+|B-|80 - 82.5|
+|C+|77.5 - 80|
+|C|72.5 - 77.5|
+|C-|70 - 72.5|
+|D+|67.5 - 70|
+|D|62.5 - 67.5|
+|D-|60 - 62.5|
+|F|<60|
+
+### Regrading Policies
+All re-grading requests for exams, quizzes, and assignments must be submitted in writing with an explanation for why the scoring is thought to be inaccurate.
+
+### Lab Attendance
+This course is built around a computational lab that provides you the opputunity to interact with the instructor and each other while trying to work through bioinformatics workflows. Because I believe this interaction to be core to the development of new computational skills,  attendance of the lab as part of your participation grade. If you have an emergency that requires you to miss lab, please inform the instructor as soon as possible
+
+### Lab Exercises
+There will be lab assignments due every week or two. Lab assignments will consist of questions that you answer as you work through the lab material. They may consist of combinations of short answers, code segments, figures, and other data analysis. Lab assignments will be turned via GitHub. You will learn how to do this before the first due date.
+
+### Quizzes
+Weekly 10 min multiple choice quizzes will be administered covering reading and lecture materials. These are meant to keep you on track over the quarter.
+
+### Lab Project
+An important part of your grade for this course will be to apply your new computational skills by conducting research with a dataset produced by my laboratory. You will develop a short presentation on your research during the final meeting period, and you will generate a research report to be turned in during finals week. I will provide you with further details on this as the course progresses.
+
+## UCR ACADEMIC POLICIES AND STUDENT SUPPORT
+### ITS Help and Student Technology Support
+ITS Student Technology Services supports 9 student computer labs, including 7 public labs and 2 nonpublic labs, with approximately 293 public lab hours per week (with reduced hours during breaks and summer) available for academic use by all UCR students.
+
+ Whether you need a machine to work on your paper, need to use specialized software required by your class, assistance with your R'Mail or iLearn accounts, getting on the network, or any other services used by UCR students, contact Bearhelp@ucr.edu.
+
+### Academic Misconduct
+In addition to the course conduct policies outlined by your professor in the Course Syllabus in the online classroom, please review the Graduate Student Handbook. 
+
+It is the responsibility of each student to be familiar with the definitions, policies, and procedures concerning academic misconduct. Please revisit our Academic Integrity Policies and Procedures for more information. This site also defines misconduct, provides examples of prohibited conduct, and explains the sanctions available for those found guilty of misconduct.
+
+### Plagiarism
+Plagiarism is the most common form of academic misconduct at UCR. It is the appropriation of another person's ideas, processes, results, or words without giving appropriate credit. This includes the copying of language, structure, or ideas of another and attributing (explicitly or implicitly) the work to one's own efforts. Plagiarism means using another's work without giving credit.
+
+For more information about plagiarism, see Academic Integrity Policies and Procedures.
+
+### Reasonable Accommodation for Disabilities
+UCR is committed to providing reasonable accommodation for all students with disabilities. Students with disabilities who require accommodations in this course should contact their professor as early in the semester as possible.
+
+Students with disabilities must be registered with the Student Disability Resource Center prior to receiving accommodations in this course.
+
+If you have a disability and you would like to make a request for reasonable accommodation, please see the Graduate Student Handbook or get in touch with the Student Disability Resource Center.
+
+### Adjustments for Pregnancy/Childbirth Related Issues
+Should you need modifications or adjustments to your course requirements because of documented pregnancy-related or childbirth-related issues, please contact me as soon as possible to discuss your options. Generally, modifications will be made where medically necessary and similar in scope to accommodations based on temporary disability.  Learn more about the rights of pregnant and parenting students by consulting the Office of Diversity, Equity, and Inclusion.
+
+### Title IX Resources
+For any concerns regarding gender-based discrimination, sexual harassment, sexual misconduct, stalking, or intimate partner violence, the University offers a variety of resources, including advocates on-call 24/7, counseling services, mutual no contact orders, scheduling adjustments, and disciplinary sanctions against the perpetrator. Please see the Title IX website for more information. They can be reached at (951)827-7070. You can also file a report.
+
+### Student Needs
+Student Health Services, Counseling & Psychological Services (CAPS), Residential Life, Dining, and R’Pantry are available to support students. 
+
+### Religious Holidays
+It is the policy of the University to excuse absences of students that result from religious observances and to provide for the rescheduling of examinations and additional required classwork that may fall on religious holidays without penalty. It is the responsibility of the student to make alternate arrangements with the instructor at least one week prior to the actual date of the religious holiday.
+
+### Copyright Policy
+It is illegal to download, upload, reproduce, or distribute any copyrighted material, in any form and in any fashion, without permission from the copyright holder or his/her authorized agent. UCR expects all members of its community to comply fully with federal copyright laws.
+
+### Registration and Withdrawal
+If you choose to withdraw from this course, you must complete the appropriate University form and turn the form in before the deadline. Deadlines are shown in the Academic Calendar, which is available from the Office of the Registrar.
+
+## Campus student services
+### Academic support (General, not all apply specifically to this course)
+* [Writing Support Program](https://arc.ucr.edu/writing)
+* [Assistance, Coaching & Encouragement](https://arc.ucr.edu/ace)
+* ITS Student Technology Services Computer labs. If need a machine for an assignment, assistance with your R'Mail or iLearn accounts, getting on the network, or any other services used by UCR students, contact [here](Bearhelp@ucr.edu). 
+* Disability support: If you require accommodations, please be sure to apply through the [Student Disability Resource Center](https://sdrc.ucr.edu/current-ucr-students) as soon as possible, as there may be some wait time.
+* Adjustments for Pregnancy/Childbirth Related Issues: Should you need modifications or adjustments to your course requirements because of documented pregnancy-related or childbirth-related issues, please contact me as soon as possible to discuss your options. Generally, modifications will be made where medically necessary and similar in scope to accommodations based on temporary disability. Learn more about the rights of pregnant and parenting students by consulting the [Office of Diversity, Equity, and Inclusion](https://diversity.ucr.edu/). 
+* Title IX Resources: For any concerns regarding gender-based discrimination, sexual harassment, sexual misconduct, stalking, or intimate partner violence, the University offers a variety of resources, including advocates on-call 24/7, counseling services, mutual no contact orders, scheduling adjustments, and disciplinary sanctions against the perpetrator. Please see the Title IX website for more information. They can be reached at (951)827-7070. [You can also file a report](https://titleix.ucr.edu/reporting).
+* Student Needs: [Student Health Services](https://studenthealth.ucr.edu/) and [Counseling & Psychological Services](https://studenthealth.ucr.edu/)
