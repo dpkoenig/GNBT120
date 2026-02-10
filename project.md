@@ -1,4 +1,4 @@
-# Project Datasets and instructions THIS IS FROM 2025 WILL BE UPDATED!!!!!
+# Project Datasets and instructions
 The project is based on a genetic diversity dataset that was produced for the important African legume crop, [cowpea](https://en.wikipedia.org/wiki/Cowpea). You can download the dataset [here](https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/project.tar.gz)
 
 Cowpea is one of the most heat and drought tolerant crop species, and it is important that we understand how cowpea can survive in extreme climates across a gradient in West Africa. You will have environmental data and genetic data from a large number of cowpea varieties and your mission is to attempt to link genetic data to the environmental adaptation. At minimum, your analysis should analyze 5 environmental parameters.
