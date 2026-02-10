@@ -1,12 +1,16 @@
 # Project Datasets and instructions
 The project is based on a genetic diversity dataset that was produced for the important African legume crop, [cowpea](https://en.wikipedia.org/wiki/Cowpea). You can download the dataset [here](https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/project.tar.gz)
 
+## Point Allocation
+* 80 points write up
+* 80 points oral presentation and slides
+
+## Description
 Cowpea is one of the most heat and drought tolerant crop species, and it is important that we understand how cowpea can survive in extreme climates across a gradient in West Africa. You will have environmental data and genetic data from a large number of cowpea varieties and your mission is to attempt to link genetic data to the environmental adaptation. At minimum, your analysis should analyze 5 environmental parameters.
 
 ## Useful links
 1) [Cowpea Genome Browser](https://phytozome-next.jgi.doe.gov/jbrowse/index.html?data=genomes%2FVunguiculata_v1_2&loc=Vu06%3A12197251..12240950&tracks=Transcripts%2CAlt_Transcripts%2CPASA_assembly%2CBlatx_Fabidae%2CBlastx_protein&highlight=)
 2) [BIOCLIM Variable definitions](https://www.worldclim.org/data/bioclim.html#google_vignette)
-3) [Github repository for your project](https://classroom.github.com/a/wWtsAtY9)
 
 ## Analysis
 1) An analysis of population structure in the dataset
