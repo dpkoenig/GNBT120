@@ -12,8 +12,8 @@
 |5|02/03/2026| Phylogeny | [Bioinformatics for beginners](https://www.sciencedirect.com/science/article/pii/B9780124104716000098) | Assignment #3 Part 1  |
 |5|02/05/2026| Plotting in R and Analysis of Polymorphism #1 | Buffalo: p. 207 - 224 (Chapter 8 Exploring Data Visually with ggplot2 1: Scatterplots and Densities to Using ggplot2 Facets); R for data science Chapters 3, 12 | |
 |6|02/10/2026| Analysis of Polymorphism #2 | TBA | Assignment #3 Part 2, Assignment #2 edits, and Quiz #4  |
-|6|02/12/2026| Guest Lecture and Genome-wide Association studies | [Wikipedia GWAS](http://en.wikipedia.org/wiki/Genome-wide_association_study) [GWAS Q & A](http://jnmaloof.github.io/BIS180L_web/docs/Brookfield2010_BMC_Biol.pdf) [GWAS protocol](http://jnmaloof.github.io/BIS180L_web/docs/Al-Chalabi_2009_Cold%20Spring%20Harbor%20protocols.pdf) | Assignment #4 |
-|7|02/17/2026| Genome Resequencing | Buffalo: p. 339 - 351 (Start of Chapter 10 to Indexed FASTA Files) | Quiz #5 |
+|6|02/12/2026| Genome-wide Association studies | [Wikipedia GWAS](http://en.wikipedia.org/wiki/Genome-wide_association_study) [GWAS Q & A](http://jnmaloof.github.io/BIS180L_web/docs/Brookfield2010_BMC_Biol.pdf) [GWAS protocol](http://jnmaloof.github.io/BIS180L_web/docs/Al-Chalabi_2009_Cold%20Spring%20Harbor%20protocols.pdf) |  |
+|7|02/17/2026| Genome Resequencing | Buffalo: p. 339 - 351 (Start of Chapter 10 to Indexed FASTA Files) | Quiz #5 and Assignment #4|
 |7|02/19/2026| Identification of genetic variants | Buffalo p. 355 - 377 (Start of Chapter 11 to Pileups with samtools pileup) | Assignment #5 |
 |8|02/24/2026| VCF files and variant analysis | TBA | Quiz #6 and project dataset posted |
 |8|02/26/2026| Differential gene expression analysis | None | Assignment #6 |

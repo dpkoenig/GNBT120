@@ -463,7 +463,3 @@ In this table, some of the column names should be obvious. Here are some of the 
 Hint think back to tidyverse if you don’t remember how to arrange a data frame.
 
 2. Look for genes close to the most significant SNP using the [rice genome browser](http://rice.uga.edu/cgi-bin/gbrowse/rice/). Pick a significant SNP from your analysis and enter its chromosome and position in the search box. The browser wants you to enter a start and stop position, so for example, you should enter “Chr3:30449857..30449857” and then choose “show 20kb” from the pulldown menu on the right hand side. Report the SNP you chose and the three closest genes. These are candidate genes for determining the phenotype of your trait of interest in the rice population. Briefly discuss these genes as possible candidates for the GWAS peak. **Include a Screenshot of the genome browser in your answer**
-
-*Hint: You can take a screenshot on your JetStream instance by clicking on the app-chooser (bottom left, many small tiles) and searching for “screenshot”
-
-Hint: You can include an image in your knitted Rmd file with `![](MyImage.jpg)` on its own line, where `MyImage.jpg` is the path to your image.*
