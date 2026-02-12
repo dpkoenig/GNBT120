@@ -2,7 +2,7 @@
 The project is based on a genetic diversity dataset that was produced for the important African legume crop, [cowpea](https://en.wikipedia.org/wiki/Cowpea). You can download the dataset [here](https://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/project.tar.gz)
 
 ## Point Allocation
-* 80 points write up
+* 80 points write up. Your folder upload/organization will be included.
 * 80 points oral presentation and slides
 
 ## Description
