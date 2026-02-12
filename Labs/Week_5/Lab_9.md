@@ -1,4 +1,27 @@
 # Rice SNPs
+
+## The tutorials are no longer hosted on Julin's site. Please use the following code to install them (only needs to be done once)
+```
+install.packages("learnr")
+install.packages("devtools")
+
+#
+library(learnr)
+library(devtools)
+devtools::install_github("UCDBIS180L/BIS180LTutorials") # only needs to be done once per computer
+```
+## To load a specific tutoral (example here is for the ggplot tutorial)
+```
+learnr::run_tutorial("ggplot", package = "BIS180LTutorials") 
+```
+The availiable tutorials are
+* ggplot
+* Tidyverse_Introduction
+* Gather_And_Spread
+* Pivot
+* Joins
+* Stringr_and_Regex
+
 ## Getting Started
 * I have created a new repository called `Assignment_4` file there.
 * Clone the repository into a new Rstudio Project
