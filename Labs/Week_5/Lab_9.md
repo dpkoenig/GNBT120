@@ -1,6 +1,8 @@
 # Rice SNPs
 
-## The tutorials are no longer hosted on Julin's site. Please use the following code to install them (only needs to be done once)
+## The tutorials are no longer hosted on Julin's site. Please use the following code to install them (only needs to be done once).
+
+Open Rstudio
 ```
 install.packages("learnr")
 install.packages("devtools")
