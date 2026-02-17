@@ -14,9 +14,9 @@
 |6|02/10/2026| Analysis of Polymorphism #2 | TBA | Assignment #3 Part 2, Assignment #2 edits, and Quiz #4  |
 |6|02/12/2026| Genome-wide Association studies | [Wikipedia GWAS](http://en.wikipedia.org/wiki/Genome-wide_association_study) [GWAS Q & A](http://jnmaloof.github.io/BIS180L_web/docs/Brookfield2010_BMC_Biol.pdf) [GWAS protocol](http://jnmaloof.github.io/BIS180L_web/docs/Al-Chalabi_2009_Cold%20Spring%20Harbor%20protocols.pdf) |  |
 |7|02/17/2026| Genome Resequencing | Buffalo: p. 339 - 351 (Start of Chapter 10 to Indexed FASTA Files) | None |
-|7|02/19/2026| Identification of genetic variants | Buffalo p. 355 - 377 (Start of Chapter 11 to Pileups with samtools pileup) | Quiz #5 and Assignment #4 |
-|8|02/24/2026| VCF files and variant analysis | TBA | Assignment #5 and Quiz #6 |
-|8|02/26/2026| Differential gene expression analysis | None | Assignment #6 |
+|7|02/19/2026| CLUSTER DOWN ! | None| Quiz #5 and Assignment #4 |
+|8|02/24/2026| Identification of genetic variants | Buffalo p. 355 - 377 (Start of Chapter 11 to Pileups with samtools pileup)  | Assignment #5 and Quiz #6 |
+|8|02/26/2026| VCF files and variant analysis | None | Assignment #6 |
 |9|03/03/2026| Work on project and assignment revisions | None | Assignment #7 |
 |9|03/05/2026| Work on project and assignment revisions | None | Assignment #8 |
 |10|03/10/2026| Project wrap up slide review | | |
