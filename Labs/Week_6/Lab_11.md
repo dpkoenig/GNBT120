@@ -164,8 +164,19 @@ That should produce a usage statement. If you got an error saying `command not 
 - Change directories into the Assignment_6 directory.
 - Now change directories into the `input/Brapa_reference` directory.
 
+
 Download and unzip the Brassica rapa fasta reference file:
 
+NOTE: the cluster is no longer working for data sharing do the following to download all course data, then move the appropriate files to the appropriate folders
+
+* Make a folder in bigdata and change into that folder to hold all the course data
+* Do the following
+```
+pip install gdown
+python3 -m pip install --upgrade pip
+gdown --folder --id 14m44kuEicj6frL9jrIqwQ1E7BOFVDiq5
+```
+Don't do the following wget
 ```
 wget http://cluster.hpcc.ucr.edu/~dkoenig/COURSE_DATA/BrapaV1.5_chrom_only.fa.gz
 gunzip BrapaV1.5_chrom_only.fa.gz
