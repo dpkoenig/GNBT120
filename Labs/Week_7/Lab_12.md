@@ -36,7 +36,7 @@ You will see several files there. Some of these are listed below
 - `IMB211_INTERNODE_SJ.out.tab` A tab-delimited file giving exon splice junctions
 - `IMB211_INTERNODE_Log.final.out` Summarizes the mapping
 
-**Exercise 8**: Take a look at the `IMB211_INTERNODE_Log.final.out` file.
+**Exercise 1**: Take a look at the `IMB211_INTERNODE_Log.final.out` file.
 _You only need to answer for the IMB211 alignment_
 **a**. What percentage of reads map uniquely to the reference?
 **b**. What reasons are given for the reads that don’t map uniquely (list three)
@@ -83,9 +83,13 @@ And more
 
 While `samtools view` is nice, it would be nicer to actually see our reads in context. We can do this with [IGV, the Integrative Genome Viewer](https://www.broadinstitute.org/igv/).
 
-**You will have to do this part of the lab on your own computer. Download igv onto your own computer and make sure you can get it to run**
+To start IGV, go to HPCC Desktop, open the terminal and execute the following:
+```
+module load igv
+igv.sh
+```
 
-To use IGV, first create an index of the bam file
+In a seperate terminal first create an index of the bam file
 
 ```
 samtools index IMB211_INTERNODE_Aligned_A03.bam
@@ -95,12 +99,11 @@ samtools index IMB211_INTERNODE_Aligned_A03.bam
 
 ### Prepare the genome reference files for IGV to use
 
-**Use rsync to copy the bam files and there indexes onto your computer.**
 
 By default IGV starts with the human genome. It has a number of built-in genomes, but does not include _B. rapa_. We must upload it ourselves.
 
 #### load the genome fasta
-**Use rsync to copy Brapa_gene_v1.5.gff and BrapaV1.5_chrom_only.fa onto your computer. These files are from Assignment_6**
+**Assignment_6**
 
 Select `BrapaV1.5_chrom_only.fa` located in input/Brapa_reference of your Assignment 7 repository
 
@@ -129,10 +132,10 @@ Click on the “ALL” pull-down menu and select chromosome A03. Then zoom in un
 - In the lower panel, the blue blocks and lines show the **reference annotation**. Blocks are exons and lines are introns. The arrowheads show the direction of transcription.
 - The orange lines show junctions inferred by STAR from our reads
 
-**Exercise 9**:
+**Exercise 2**:
 Can you distinguish likely SNPs from sequencing/alignment errors? How?
 
-**Exercise 10**: View each gene listed below in IGV. (You can type the gene ID into the IGV search bar). For each gene, does the computationaly predicted annotation (blue bars) appear to be correct or incorrect given our RNA-seq data? If incorrect, describe what is wrong.
+**Exercise 3**: View each gene listed below in IGV. (You can type the gene ID into the IGV search bar). For each gene, does the computationaly predicted annotation (blue bars) appear to be correct or incorrect given our RNA-seq data? If incorrect, describe what is wrong.
 **a** Bra001706
 **b** Bra001700
 **c** Bra001702
